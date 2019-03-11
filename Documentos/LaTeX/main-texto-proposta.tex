@@ -1,0 +1,179 @@
+%% Adaptado a partir de :
+%%    abtex2-modelo-trabalho-academico.tex, v-1.9.2 laurocesar
+%% para ser um modelo para os trabalhos no IFSP-SPO
+
+\documentclass[
+    % -- opções da classe memoir --
+    12pt,               % tamanho da fonte
+    openright,          % capítulos começam em pág ímpar (insere página vazia caso preciso)
+    %twoside,            % para impressão em verso e anverso. Oposto a oneside
+    oneside,
+    a4paper,            % tamanho do papel. 
+    % -- opções da classe abntex2 --
+    %chapter=TITLE,     % títulos de capítulos convertidos em letras maiúsculas
+    %section=TITLE,     % títulos de seções convertidos em letras maiúsculas
+    %subsection=TITLE,  % títulos de subseções convertidos em letras maiúsculas
+    %subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+    % Opções que não devem ser utilizadas na versão final do documento
+    draft,              % para compilar mais rápido, remover na versão final
+    MODELO,             % indica que é um documento modelo então precisa dos geradores de texto
+    TODO,               % indica que deve apresentar lista de pendencias 
+    % -- opções do pacote babel --
+    english,            % idioma adicional para hifenização
+    brazil              % o último idioma é o principal do documento
+    ]{ifsp-spo-inf-ctds}
+
+        
+% ---
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+%\usepackage{etoolbox}
+%\patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+
+
+% ---
+% CAPA e FOLHA DE ROSTO
+% ---
+\titulo{GinQuest: Aplicativo para criação e gerenciamento de gincanas}
+
+\renewcommand{\imprimirautor}{
+\begin{tabular}{lr}
+Jones Sabino Silva & SP1672576 \\
+Murilo Vicente da Silva & SP1674706 \\
+Renata Monteiro Gadelha & SP1666339 \\
+Rodrigo Bressan de Souza & SP167031X \\
+Victor Hiroshi Castro Kawamoto & SP1670425 \\
+\end{tabular}
+}
+
+\tipotrabalho{Projeto da Disciplina de Prática e Gerenciamento de Projetos}
+
+\disciplina{A6PGP - Prática e Gerenciamento de Projetos}
+
+\preambulo{Proposta de projeto para disciplina de Prática e Gerenciamento de Projetos}
+
+\data{2019}
+
+% Utilizar o Nome Completo, abntex tem orientador e coorientador
+% então vão ser utilizados na definição de professor
+\renewcommand{\orientadorname}{Professor:}
+\orientador{José Braz de Araújo}
+\renewcommand{\coorientadorname}{Professor:}
+\coorientador{Ivan Francolin Martinez}
+
+% ---
+
+% Configurações de aparência do PDF final
+
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+        %pagebackref=true,
+        pdftitle={\@title}, 
+        pdfauthor={\@author},
+        pdfsubject={\imprimirpreambulo},
+        pdfcreator={LaTeX with abnTeX2},
+        pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+        colorlinks=true,            % false: boxed links; true: colored links
+        linkcolor=blue,             % color of internal links
+        citecolor=blue,             % color of links to bibliography
+        filecolor=magenta,              % color of file links
+        urlcolor=blue,
+        bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+\pretextual
+
+% ---
+% Capa - Para proposta a folha de rosto é suficiente pois é mais completa.
+% ---
+\imprimirfolhaderosto
+% ---
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+% \chapter{Introdução}
+\section{Introdução}
+Segundo \citeauthor{analaura:2016} o marketing de relacionamento tem se destacado como ponto importante de manutenção e captação de clientes. As mídias sociais despontam como uma oportunidade para a interação entre as pessoas e, significativamente, como meio de relacionamento entre
+empresa e consumidor.
+
+O alto nível de relacionamento entre a empresa e o consumidor pode contribuir para o sucesso do negócio, ao transformar o consumidor em fã, reduzir os
+investimentos em publicidade e levar o
+consumidor a indicar os produtos (\citeauthor{guilherme:2013}, 2013)
+
+Uma das mais importantes definições
+de engajamento do cliente foi elaborada por \citeauthor{jenny:2010} afirmando que é a “manifestação de comportamento dos clientes em direção a uma marca ou empresa, que vai além da compra, resultando em condutores motivacionais”.
+
+\section{Proposta}
+% \section{Plataforma My Place}
+O presente projeto tem o objetivo de desenvolver um aplicativo para dispositivos móveis que funciona como uma plataforma de criação e gerenciamento de gincanas onde empresas possam cadastrar diversas atividades disponíveis para serem realizadas pelos usuários.
+
+Além do usuário final se divertir com as atividades o mesmo ainda seria bonificado com prêmios e descontos. As empresas ganharão com o engajamento do usuário com a sua marca além de publicações relacionadas à gincana sendo realizada em outras redes sociais.
+
+O foco do aplicativo são as empresas, mas os usuários também podem criar gincanas privadas a serem compartilhadas com os amigos.
+
+Todas as gincanas possuem raking de pontuação (que levará também em conta o tempo de realização da atividade e a complexidade da tarefa) e seu administrador pode definir uma premição na criação da gincana: brinde, número da sorte, desconto ou trofeu virtual.
+
+O administrador além de criar as gincanas, denifir as atividades e verificar o andamento da mesma, também pode cadastrar moderadores para auxiliar no gerenciamento. 
+
+Para um administrador ser reconhecido como representante oficial de uma empresa é necessário ser aprovado em um ou mais critérios de validação (depende da empresa), como cadastrar uma gincana com premiação e inserir o número de cadastro da promoção na Caixa Econômica Federal, inserir código de validação gerado pelo aplicativo no site oficial da empresa, verificar nome no registro da empresa, entre outras opções.
+
+O aplicativo também conta com conta de usuários certificados, que poderão ser indicados para serem moderadores de gincanas. Moderadores não podem participar das gincanas durante o periodo que estão moderando qualquer gincana.
+ 
+\section{Lista de cadastro de atividades}
+\begin{itemize}
+\item Escolha de um local no mapa com possibilidade de limitar os dias e horários. Ex: Av. Paulista no dia 01/03/2019 à meia noite;
+\item Leitura de QR Code. Ex: Encontre o QR Code no primeiro piso do shopping D;
+\item Realizar publicação no facebook, twitter ou instagram de um conteúdo pré-programado. Ex: Aplicativo realizar uma publicação informando que o usuário está participando de uma gincana;
+\item Perguntas com resposta já definidas com a possibilidade de limitar o tempo de resposta. Ex: Qual era o nome do fundador da Apple? Respostas A, B, C, D e tempo limite de 5 segundos;
+\item Fotos, vídeos e publicações realizando atividades específicas (precisaria de um moderador caso o administrador desejasse realmente validar);
+\item Atividade específica a ser validada por um moderador. Ex: Dançar macarena na loja da marca e o funcionário validar a atividade (ele poderia simplesmente ter uma QRCode validadora na loja);
+\item Criar uma ordem específica para as atividades serem cumpridas. Ex: Primeiro realizar a atividade da Paulista e depois fazer a dança da macarena.
+\end{itemize}
+
+\section{Gerenciamento}
+Programas utilizados para auxiliar no gerenciamento do projeto:
+
+\begin{itemize}
+\item Whatsapp: Ferramenta principal para comunicação;
+\item Messenger: Ferramenta de apoio à comunicação quando a ferramenta anterior não puder ser utilizada;
+\item Google Drive: Ferramenta para armazenamento compartilhado do material de apoio (material de referência, rascunhos, materiais gráficos, etc): 
+\item Overleaf: Ferramenta para escrita e formatação compartilhada do relatório final;
+\item Subversion (Tortoise SVN): Ferramenta cliente para o sistema de controle de versão SVN (Repositório);
+\item Monday: Ferramenta para o gerenciamento do projeto.
+\end{itemize}
+
+\section{Desenvolvimento}
+Tecnologias e ferramentas utilizadas no desenvolvimento do projeto:
+
+\begin{itemize}
+\item Banco de Dados: Relacional a ser definido;
+\item Linguagem de Programação Back-end: Javascript utilizando Node.js;
+\item Linguagem de Programação Front-end Mobile: Javascript utilizando o framework React Native;
+\item Ambiente de implantaçao Plataforma na Nuvem a ser definida.
+\end{itemize}
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\bibliography{referencias,exemplos/abntex2-doc-abnt-6023}
+
+\end{document}
