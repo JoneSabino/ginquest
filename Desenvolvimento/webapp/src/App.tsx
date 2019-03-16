@@ -2,11 +2,18 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+import { Translation } from 'react-i18next';
+import i18next from 'i18next';
+
+class App extends Component<any, any> {
+  
   render() {
+
     return (
       <div className="App">
         <header className="App-header">
+        <button onClick={() => i18next.changeLanguage('en')}>En</button>
+        <button onClick={() => i18next.changeLanguage('pt')}>Pt</button>
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.tsx</code> and save to reload.
@@ -17,7 +24,9 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            <Translation>{
+        t => <h1>{t('Welcome to React')}</h1>
+      }</Translation>
           </a>
         </header>
       </div>
