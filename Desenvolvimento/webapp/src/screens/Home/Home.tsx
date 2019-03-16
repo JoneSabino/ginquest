@@ -1,25 +1,37 @@
+import i18next from 'i18next';
 import React, { Component } from 'react';
+import { Translation } from 'react-i18next';
 import logo from '../../assets/logo.svg';
 import './Home.css';
-
-import { Translation } from 'react-i18next';
-import i18next from 'i18next';
+import Form from 'react-bootstrap/Form';
 
 interface Props {}
 
 interface State {}
 
 class Home extends Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+    }
+
     public render() {
         return (
             <div className="App">
                 <header className="App-header">
-                    <button onClick={() => i18next.changeLanguage('en')}>
-                        En
-                    </button>
-                    <button onClick={() => i18next.changeLanguage('pt')}>
-                        Pt
-                    </button>
+                    <Form>
+                        <Form.Group controlId="exampleForm.ControlSelect1">
+                            <Form.Label>Language Select</Form.Label>
+                            <Form.Control
+                                as="select"
+                                onChange={(event: any) => {
+                                    i18next.changeLanguage(event.target.value);
+                                }}
+                            >
+                                <option value="en-US">en-US</option>
+                                <option value="pt-BR">pt-BR</option>
+                            </Form.Control>
+                        </Form.Group>
+                    </Form>
                     <img src={logo} className="App-logo" alt="logo" />
                     <p>
                         Edit <code>src/App.tsx</code> and save to reload.

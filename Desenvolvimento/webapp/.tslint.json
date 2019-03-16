@@ -14,7 +14,7 @@
         "no-unnecessary-qualifier": false,
         "no-unnecessary-type-assertion": false,
         "strict-type-predicates": false,
-        "ordered-imports": false,
+        "ordered-imports": true,
         "object-literal-sort-keys": false,
         "member-ordering": false,
         "jsx-no-lambda": false,

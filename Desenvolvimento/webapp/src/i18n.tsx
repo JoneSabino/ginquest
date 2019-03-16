@@ -4,14 +4,16 @@ import { initReactI18next } from 'react-i18next';
 // the translations
 // (tip move them in a JSON file and import them)
 const resources = {
-    en: {
+    'en-US': {
         translation: {
             'Welcome to React': 'Welcome to React and react-i18next!!!',
+            Home: 'Home',
         },
     },
-    pt: {
+    'pt-BR': {
         translation: {
             'Welcome to React': 'Bem vindo ao React e ao react-i18next!!!',
+            Home: 'Início',
         },
     },
 };
@@ -19,7 +21,7 @@ const resources = {
 i18n.use(initReactI18next) // passes i18n down to react-i18next
     .init({
         resources,
-        lng: 'pt',
+        lng: 'en-US',
 
         keySeparator: false, // we do not use keys in form messages.welcome
 

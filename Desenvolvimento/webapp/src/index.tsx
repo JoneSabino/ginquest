@@ -1,13 +1,13 @@
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
+import 'jquery';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'jquery';
-import 'bootstrap/dist/js/bootstrap.bundle';
 import { BrowserRouter } from 'react-router-dom';
-import './index.css';
-import './i18n';
-import * as serviceWorker from './serviceWorker';
 import App from './components/App/App';
+import './i18n';
+import './index.css';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <BrowserRouter>

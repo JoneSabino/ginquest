@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import Gincana from '../../screens/Quiz/Quiz';
 import Home from '../../screens/Home/Home';
-import Gincana from '../../screens/Gincana/Gincana';
 
-class Content extends Component<any, any> {
+interface Props {}
+
+interface State {}
+
+class Content extends Component<Props, State> {
     public render() {
         return (
             <main>
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <Route path="/gincana" component={Gincana} />
+                    <Route path="/quiz" component={Gincana} />
                 </Switch>
             </main>
         );

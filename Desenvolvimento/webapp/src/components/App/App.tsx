@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import Content from '../Content/Content';
 import Header from '../Header/Header';
 
-class App extends Component<any, any> {
+interface Props {}
+
+interface State {}
+
+class App extends Component<Props, State> {
     public render() {
         return (
             <div>
