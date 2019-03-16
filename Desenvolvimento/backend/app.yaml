@@ -1,0 +1,2 @@
+service: ginquest-backend
+runtime: nodejs10

@@ -45,6 +45,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Setando Proxy(IFSP) para o Google Cloud CLI
 
+gcloud config unset proxy/type
+gcloud config unset proxy/address
+gcloud config unset proxy/port
+gcloud config unset proxy/username
+
 gcloud config set proxy/type http
 gcloud config set proxy/address 10.102.2.253
 gcloud config set proxy/port 3128
