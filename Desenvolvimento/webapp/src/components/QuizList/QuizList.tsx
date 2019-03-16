@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Form from 'react-bootstrap/Form';
+import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 
 interface Props {}
@@ -94,7 +94,35 @@ class QuizList extends Component<Props, State> {
         correct: number;
     }) {
         return (
-            <ul>
+            <ListGroup variant="flush" key={item.quizid}>
+                <ListGroup.Item key={item.quizid}>
+                    {item.quizid} - {item.pergunta}
+                </ListGroup.Item>
+                <ListGroup.Item
+                    variant={item.correct == 1 ? 'success' : 'warning'}
+                >
+                    {item.resposta1}
+                </ListGroup.Item>
+                <ListGroup.Item
+                    variant={item.correct == 2 ? 'success' : 'warning'}
+                >
+                    {item.resposta2}
+                </ListGroup.Item>
+                <ListGroup.Item
+                    variant={item.correct == 3 ? 'success' : 'warning'}
+                >
+                    {item.resposta3}
+                </ListGroup.Item>
+                <ListGroup.Item
+                    variant={item.correct == 4 ? 'success' : 'warning'}
+                >
+                    {item.resposta4}
+                </ListGroup.Item>
+                <ListGroup.Item
+                    variant={item.correct == 5 ? 'success' : 'warning'}
+                >
+                    {item.resposta5}
+                </ListGroup.Item>
                 <Button
                     variant="danger"
                     name={item.quizid + ''}
@@ -102,13 +130,7 @@ class QuizList extends Component<Props, State> {
                 >
                     Deletar
                 </Button>
-                {item.quizid} - {item.pergunta}
-                <li key={item.quizid + 1}>{item.resposta1}</li>
-                <li key={item.quizid + 2}>{item.resposta2}</li>
-                <li key={item.quizid + 3}>{item.resposta3}</li>
-                <li key={item.quizid + 4}>{item.resposta4}</li>
-                <li key={item.quizid + 5}>{item.resposta5}</li>
-            </ul>
+            </ListGroup>
         );
     }
 
