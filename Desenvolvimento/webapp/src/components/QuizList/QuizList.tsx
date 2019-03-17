@@ -3,8 +3,6 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import { withTranslation } from 'react-i18next';
 
-interface Props {}
-
 interface State {
     error: any;
     isLoaded: boolean;
@@ -77,6 +75,7 @@ class QuizList extends Component<any, State> {
         resposta5: string;
         correct: number;
     }) {
+        const { t } = this.props;
         return (
             <ListGroup variant="flush" key={item.quizid}>
                 <ListGroup.Item key={item.quizid}>
@@ -112,7 +111,7 @@ class QuizList extends Component<any, State> {
                     name={item.quizid + ''}
                     onClick={this.deleteItem.bind(this)}
                 >
-                    Deletar
+                    {t('Deletar')}
                 </Button>
             </ListGroup>
         );

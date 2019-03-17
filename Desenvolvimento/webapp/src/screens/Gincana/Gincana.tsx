@@ -7,7 +7,7 @@ class Gincana extends Component<any, any> {
         const { t } = this.props;
         return (
             <div>
-                <h1>Gincana Braba</h1>
+                <h1>{t('Gincana Braba')}</h1>
             </div>
         );
     }
