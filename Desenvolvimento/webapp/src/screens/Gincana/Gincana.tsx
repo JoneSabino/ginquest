@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import logo from '../../assets/logo.svg';
 import './Gincana.css';
-
-import { Translation } from 'react-i18next';
-import i18next from 'i18next';
+import { withTranslation } from 'react-i18next';
 
 class Gincana extends Component<any, any> {
     public render() {
+        const { t } = this.props;
         return (
             <div>
                 <h1>Gincana Braba</h1>
@@ -15,4 +13,4 @@ class Gincana extends Component<any, any> {
     }
 }
 
-export default Gincana;
+export default withTranslation()(Gincana);

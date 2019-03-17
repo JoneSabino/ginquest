@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
+import { withTranslation } from 'react-i18next';
 
 interface Props {}
 
@@ -19,13 +20,13 @@ interface State {
     }>;
 }
 
-class QuizList extends Component<Props, State> {
+class QuizList extends Component<any, State> {
     constructor(Props: any) {
         super(Props);
         this.state = {
             error: null,
             isLoaded: false,
-            items: []
+            items: [],
         };
     }
 
@@ -118,11 +119,16 @@ class QuizList extends Component<Props, State> {
     }
 
     public render() {
+        const { t } = this.props;
         const { error, isLoaded, items } = this.state;
         if (error) {
-            return <div>Error: {error.message}</div>;
+            return (
+                <div>
+                    {t('Error')}: {error.message}
+                </div>
+            );
         } else if (!isLoaded) {
-            return <div>Loading...</div>;
+            return <div>{t('Loading...')}</div>;
         } else {
             return (
                 <div key="teste">
@@ -133,4 +139,4 @@ class QuizList extends Component<Props, State> {
     }
 }
 
-export default QuizList;
+export default withTranslation()(QuizList);
