@@ -4,11 +4,16 @@ import Button from 'react-bootstrap/Button';
 import { Redirect } from 'react-router';
 import { withTranslation } from 'react-i18next';
 
+interface Props {
+    history: any;
+}
+
 interface State {}
 
 class QuizForm extends Component<any, State> {
     constructor(Props: any, State: any) {
         super(Props, State);
+        this.state = { correct: 1 };
         this.changeHandler.bind(this);
         this.handleSubmit.bind(this);
     }
@@ -20,7 +25,6 @@ class QuizForm extends Component<any, State> {
         this.setState({
             [name]: value,
         });
-        console.log(this.state);
     };
 
     private handleSubmit(event: any) {
@@ -32,7 +36,9 @@ class QuizForm extends Component<any, State> {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(this.state),
-        }).then(() => <Redirect to="/quiz/" push />);
+        }).then(() => {
+            this.props.history.push('/quiz');
+        });
     }
 
     public render() {
