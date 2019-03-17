@@ -15,24 +15,10 @@ class Home extends Component<any, any> {
         return (
             <div className="App">
                 <header className="App-header">
-                    <Form>
-                        <Form.Group controlId="exampleForm.ControlSelect1">
-                            <Form.Label>{t('Language Select')}</Form.Label>
-                            <Form.Control
-                                as="select"
-                                onChange={(event: any) => {
-                                    i18next.changeLanguage(event.target.value);
-                                }}
-                            >
-                                <option value="en-US">{t('en-US')}</option>
-                                <option value="pt-BR">{t('pt-BR')}</option>
-                            </Form.Control>
-                        </Form.Group>
-                    </Form>
                     <img src={logo} className="App-logo" alt="logo" />
                     <p>
                         {t('Edit')} <code>src/App.tsx</code>{' '}
-                        {t('and save to reload')}}.
+                        {t('and save to reload')}.
                     </p>
                     <a
                         className="App-link"
