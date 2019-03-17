@@ -1,37 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Gincana from './screens/Quiz/Quiz';
+import Home from './screens/Home/Home';
+import Header from './components/Header/Header';
 
-import { Translation } from 'react-i18next';
-import i18next from 'i18next';
+interface Props {}
 
-class App extends Component<any, any> {
-  
-  render() {
+interface State {}
 
-    return (
-      <div className="App">
-        <header className="App-header">
-        <button onClick={() => i18next.changeLanguage('en')}>En</button>
-        <button onClick={() => i18next.changeLanguage('pt')}>Pt</button>
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Translation>{
-        t => <h1>{t('Welcome to React')}</h1>
-      }</Translation>
-          </a>
-        </header>
-      </div>
-    );
-  }
+class App extends Component<Props, State> {
+
+    render() {
+        return (
+          <div>
+            <Header />
+            <Router>
+              <Route exact path="/" component={Home} />
+              <Route path="/quiz" component={Gincana} />
+            </Router>
+          </div>
+          
+        );
+    }
 }
 
 export default App;
