@@ -50,7 +50,7 @@ class QuizList extends Component<any, State> {
             );
     }
 
-    componentDidMount() {
+    public componentDidMount() {
         this.getQuestions();
     }
 
