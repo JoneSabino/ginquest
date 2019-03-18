@@ -13,7 +13,6 @@ class App extends Component<Props, State> {
         return (
             <BrowserRouter>
                 <Header />
-
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/quiz" component={Quiz} />

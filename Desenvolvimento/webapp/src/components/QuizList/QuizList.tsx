@@ -33,7 +33,6 @@ class QuizList extends Component<any, State> {
             .then(res => res.json())
             .then(
                 result => {
-                    console.log(result);
                     this.setState({
                         isLoaded: true,
                         items: result.rows,
