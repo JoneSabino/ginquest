@@ -4,5 +4,5 @@
 - URL de acesso ao canal do Youtube do Projeto GinQuest:
 	https://www.youtube.com/channel/UCScjK7QmGkFJGwb9aMwGQGQ
 
-- URL de acesso ao repositório do GitHub do projeto GinQuest:
-	https://github.com/Bressan09/GinQuest
+- URL de acesso ao aplicativo GinQuest:
+	https://ginquest-app.appspot.com/
