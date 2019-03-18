@@ -1,0 +1,171 @@
+%% Adaptado a partir de :
+%%    abtex2-modelo-trabalho-academico.tex, v-1.9.2 laurocesar
+%% para ser um modelo para os trabalhos no IFSP-SPO
+
+\documentclass[
+    % -- opções da classe memoir --
+    12pt,               % tamanho da fonte
+    openright,          % capítulos começam em pág ímpar (insere página vazia caso preciso)
+    twoside,            % para impressão em verso e anverso. Oposto a oneside
+    %oneside,
+    a4paper,            % tamanho do papel. 
+    % -- opções da classe abntex2 --
+    %chapter=TITLE,     % títulos de capítulos convertidos em letras maiúsculas
+    %section=TITLE,     % títulos de seções convertidos em letras maiúsculas
+    %subsection=TITLE,  % títulos de subseções convertidos em letras maiúsculas
+    %subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+    % Opções que não devem ser utilizadas na versão final do documento
+    openany             %capitulos podem começar em página pares também
+    draft,              % para compilar mais rápido, remover na versão final
+    MODELO,             % indica que é um documento modelo então precisa dos geradores de texto
+    TODO,               % indica que deve apresentar lista de pendencias 
+    % -- opções do pacote babel --
+    english,            % idioma adicional para hifenização
+    brazil              % o último idioma é o principal do documento
+    ]{ifsp-spo-inf-ctds}
+
+        
+% ---
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+%\usepackage{etoolbox}
+%\patchcmd{\thebibliography}{\chapter*}{\section*}{}{}
+
+
+% ---
+% CAPA e FOLHA DE ROSTO
+% ---
+\titulo{GinQuest: Aplicativo para criação e gerenciamento de gincanas}
+
+\renewcommand{\imprimirautor}{
+\begin{tabular}{lr}
+Jones Sabino Silva & SP1672576 \\
+Murilo Vicente da Silva & SP1674706 \\
+Renata Monteiro Gadelha & SP1666339 \\
+Rodrigo Bressan de Souza & SP167031X \\
+Victor Hiroshi Castro Kawamoto & SP1670425 \\
+\end{tabular}
+}
+
+\tipotrabalho{Projeto da Disciplina de Prática e Gerenciamento de Projetos}
+
+\disciplina{A6PGP - Prática e Gerenciamento de Projetos}
+
+\preambulo{Prova de conceito do projeto para disciplina de Prática e Gerenciamento de Projetos}
+
+\data{2019}
+
+% Utilizar o Nome Completo, abntex tem orientador e coorientador
+% então vão ser utilizados na definição de professor
+\renewcommand{\orientadorname}{Professor:}
+\orientador{José Braz de Araújo}
+\renewcommand{\coorientadorname}{Professor:}
+\coorientador{Ivan Francolin Martinez}
+
+% ---
+
+% Configurações de aparência do PDF final
+
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+        %pagebackref=true,
+        pdftitle={\@title}, 
+        pdfauthor={\@author},
+        pdfsubject={\imprimirpreambulo},
+        pdfcreator={LaTeX with abnTeX2},
+        pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+        colorlinks=true,            % false: boxed links; true: colored links
+        linkcolor=blue,             % color of internal links
+        citecolor=blue,             % color of links to bibliography
+        filecolor=magenta,              % color of file links
+        urlcolor=blue,
+        bookmarksdepth=4
+}
+\makeatother 
+% --- 
+
+% ---
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+\pretextual
+
+% ---
+% Capa - Para proposta a folha de rosto é suficiente pois é mais completa.
+% ---
+\imprimirfolhaderosto
+% ---
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------------------
+\textual
+
+Este documento visa comprovar a aderência das atividades desenvolvidas  pela equipe GinQuest até a data da apresentação da prova de conceito, além de identificar as tecnologias utilizadas no seu desenvolvimento, e  representar sua arquitetura.
+
+O desenvolvimento do projeto foi dividido em três frentes: infraestrutura, aplicativo e API. A arquitetura geral do sistema foi apresentada na FIgura 1.
+
+\vspace{1cm}
+
+\begingroup
+\let\clearpage\relax
+\chapter{Infraestutura}
+\endgroup
+
+A infraestrutura do projeto é composta por um servidor WEB e um servidor de banco de dados, ambos utilizando serviços de computação em nuvem fornecidos pelo Google Cloud Platform, o GCP. A arquitetura de infraestrutura do projeto foi representada na Figura 2.
+
+
+\begin{itemize}
+\item AWS Elastic Compute Cloud - EC2: Serviço web da Amazon que disponibiliza capacidade computacional redimensionável e segura. Esse serviço hospeda a instância do servidor web t2.micro com o sistema operacional Windows Server 2016;
+\item WS Relational Database Service - RDS: Serviço de banco de dados relacional da Amazon, que permite a configuração, operação e escalabilidade do banco de dados. Esse serviço hospeda a instância do servidor de banco de dados PostgreSQL.
+\item WS Virtual Private Cloud - VPC: Rede virtual que permite provisionar uma seção da nuvem AWS logicamente isolada, e permite gerenciar recursos da Amazon Web Services. Esse serviço foi utilizado para permitir e gerenciar a ativação de recursos da AWS em uma rede virtual dedicada a conta pela equipe.
+\item AWS Route 53: ...;
+\item PostgreSQL: ...;
+\item Win-acme: ...;
+\item IISCrypto: ...;
+\item Windows Server 2016: ...;
+\item IIS10: ...
+\end{itemize}
+
+\begingroup
+\let\clearpage\relax
+\chapter{Aplicativo}
+\endgroup
+
+O aplicativo será desenvolvido utilizando a tecnologia IONIC e se comunicarão com APIs desenvolvidas pela equipe do projeto, assim como APIs de terceiros (Google Maps API e Facebook API), como explicitado na Figura 3.
+
+\begin{itemize}
+\item Ionic: ...;
+\item LAngula....
+\end{itemize}
+
+\begingroup
+\let\clearpage\relax
+\chapter{API}
+\endgroup
+
+A frente API visa o desenvolvimento de Web APIs que serão consumidas pelos aplicativos móveis. Essas APIs são responsáveis por acessar o banco de dados e enviar e receber informações para o aplicativo.
+
+\begin{itemize}
+\item NET Framework: ...;
+\item Entity Framework: ....
+\item Sonarqube: ....
+\end{itemize}
+
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\bibliography{referencias,exemplos/abntex2-doc-abnt-6023}
+
+\end{document}
