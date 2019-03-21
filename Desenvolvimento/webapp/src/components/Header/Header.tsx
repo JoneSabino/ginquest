@@ -23,18 +23,20 @@ class Header extends Component<any, State> {
                         <Nav className="mr-auto">
                             <NavDropdown title="Quiz" id="quiz-nav-dropdown">
                                 <NavDropdown.Item as="div">
-                                    <NavLink to="/quiz">List</NavLink>
+                                    <NavLink to="/quiz">{t('List')}</NavLink>
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
 
                                 <NavDropdown.Item as="div">
-                                    <NavLink to="/quiz/create">Create</NavLink>
+                                    <NavLink to="/quiz/create">
+                                        {t('Create')}
+                                    </NavLink>
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                         <Form inline>
-                            <Navbar.Text>
-                                {t('Language Select') + ' '}
+                            <Navbar.Text style={{ paddingRight: '10px' }}>
+                                {t('Language Select')}{' '}
                             </Navbar.Text>
                             <Form.Control
                                 as="select"
@@ -42,8 +44,8 @@ class Header extends Component<any, State> {
                                     i18next.changeLanguage(event.target.value);
                                 }}
                             >
-                                <option value="en-US">{t('en-US')}</option>
-                                <option value="pt-BR">{t('pt-BR')}</option>
+                                <option value="en-US">English</option>
+                                <option value="pt-BR">Português</option>
                             </Form.Control>
                         </Form>
                     </Navbar.Collapse>

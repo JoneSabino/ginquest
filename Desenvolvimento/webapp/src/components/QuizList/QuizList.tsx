@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 import { withTranslation } from 'react-i18next';
 
 interface State {
@@ -121,17 +122,17 @@ class QuizList extends Component<any, State> {
         const { error, isLoaded, items } = this.state;
         if (error) {
             return (
-                <div>
+                <Container>
                     {t('Error')}: {error.message}
-                </div>
+                </Container>
             );
         } else if (!isLoaded) {
-            return <div>{t('Loading...')}</div>;
+            return <Container>{t('Loading...')}</Container>;
         } else {
             return (
-                <div key="teste">
+                <Container key="teste">
                     {items.map(item => this.renderItem(item))}
-                </div>
+                </Container>
             );
         }
     }
