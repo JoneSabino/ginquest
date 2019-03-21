@@ -1,0 +1,1 @@
+gource -1280x720 "ginquest.log" --user-image-dir "Avatar" --key --stop-at-end --highlight-all-users --seconds-per-day 1 -b 000000 --disable-progress  --title "Gource - GinQuest" --caption-file "caption.txt" --caption-offset -12 --caption-colour FFFF00 --caption-size 18 --caption-duration 4 --hide filenames -o "ginquest.ppm"
