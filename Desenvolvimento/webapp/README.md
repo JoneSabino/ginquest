@@ -42,19 +42,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-## Setando Proxy(IFSP) para o Google Cloud CLI
-
-gcloud config unset proxy/type
-gcloud config unset proxy/address
-gcloud config unset proxy/port
-gcloud config unset proxy/username
-
-gcloud config set proxy/type http
-gcloud config set proxy/address 10.102.2.253
-gcloud config set proxy/port 3128
-gcloud config set proxy/username prontuario
-gcloud config set proxy/password password
-
-npm config set proxy http://prontuario:password@10.102.2.253:3128
-npm config set https-proxy http://prontuario:password@10.102.2.253:3128
