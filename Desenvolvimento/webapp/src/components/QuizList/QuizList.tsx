@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import { withTranslation } from 'react-i18next';
+import { withTranslation, WithTranslation } from 'react-i18next';
+
+interface Props extends WithTranslation {}
 
 interface State {
     error: any;
@@ -19,7 +21,7 @@ interface State {
     }>;
 }
 
-class QuizList extends Component<any, State> {
+class QuizList extends Component<Props, State> {
     constructor(Props: any) {
         super(Props);
         this.state = {
@@ -27,6 +29,7 @@ class QuizList extends Component<any, State> {
             isLoaded: false,
             items: [],
         };
+        this.deleteItem = this.deleteItem.bind(this);
     }
 
     private getQuestions() {
@@ -82,34 +85,34 @@ class QuizList extends Component<any, State> {
                     {item.quizid} - {item.pergunta}
                 </ListGroup.Item>
                 <ListGroup.Item
-                    variant={item.correct == 1 ? 'success' : 'warning'}
+                    variant={item.correct === 1 ? 'success' : 'warning'}
                 >
                     {item.resposta1}
                 </ListGroup.Item>
                 <ListGroup.Item
-                    variant={item.correct == 2 ? 'success' : 'warning'}
+                    variant={item.correct === 2 ? 'success' : 'warning'}
                 >
                     {item.resposta2}
                 </ListGroup.Item>
                 <ListGroup.Item
-                    variant={item.correct == 3 ? 'success' : 'warning'}
+                    variant={item.correct === 3 ? 'success' : 'warning'}
                 >
                     {item.resposta3}
                 </ListGroup.Item>
                 <ListGroup.Item
-                    variant={item.correct == 4 ? 'success' : 'warning'}
+                    variant={item.correct === 4 ? 'success' : 'warning'}
                 >
                     {item.resposta4}
                 </ListGroup.Item>
                 <ListGroup.Item
-                    variant={item.correct == 5 ? 'success' : 'warning'}
+                    variant={item.correct === 5 ? 'success' : 'warning'}
                 >
                     {item.resposta5}
                 </ListGroup.Item>
                 <Button
                     variant="danger"
                     name={item.quizid + ''}
-                    onClick={this.deleteItem.bind(this)}
+                    onClick={this.deleteItem}
                 >
                     {t('Deletar')}
                 </Button>

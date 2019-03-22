@@ -12,11 +12,11 @@ interface Props {
 interface State {}
 
 class QuizForm extends Component<any, State> {
-    constructor(Props: any, State: any) {
-        super(Props, State);
+    constructor(props: any) {
+        super(props);
         this.state = { correct: 1 };
-        this.changeHandler.bind(this);
-        this.handleSubmit.bind(this);
+        this.changeHandler = this.changeHandler.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     private changeHandler = (event: any) => {
@@ -46,7 +46,7 @@ class QuizForm extends Component<any, State> {
         const { t } = this.props;
         return (
             <Container>
-                <Form onSubmit={this.handleSubmit.bind(this)}>
+                <Form onSubmit={this.handleSubmit}>
                     <Form.Group controlId="formQuestion">
                         <Form.Label>{t('Question')}</Form.Label>
                         <Form.Control
