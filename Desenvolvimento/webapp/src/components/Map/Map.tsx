@@ -16,7 +16,7 @@ interface State {
 class QuestMap extends Component<Props, State> {
     constructor(props: any) {
         super(props);
-        this.state = { correct: 1, directions:null };
+        this.state = { correct: 1, directions: null };
     }
 
     private getLocation() {

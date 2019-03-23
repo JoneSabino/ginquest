@@ -9,7 +9,7 @@ interface Props {}
 interface State {}
 
 class Quiz extends Component<Props, State> {
-    public render() {
+    public render(): JSX.Element {
         return (
             <main>
                 <Switch>
