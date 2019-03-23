@@ -4,24 +4,20 @@ import Quiz from './screens/Quiz/Quiz';
 import Home from './screens/Home/Home';
 import Header from './components/Header/Header';
 import MyMap from './screens/MyMap/MyMap';
-import BodyContainer from './components/BodyContainer/BodyContainer';
 
 interface Props {}
 
 interface State {}
 
 class App extends Component<Props, State> {
-    public render(): JSX.Element {
+    public render() {
         return (
             <BrowserRouter>
                 <Header />
-
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <BodyContainer>
-                        <Route path="/quiz" component={Quiz} />
-                        <Route path="/map" component={MyMap} />
-                    </BodyContainer>
+                    <Route path="/quiz" component={Quiz} />
+                    <Route path="/map" component={MyMap} />
                 </Switch>
             </BrowserRouter>
         );

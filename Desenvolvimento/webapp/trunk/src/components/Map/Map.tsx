@@ -6,20 +6,19 @@ import {
     withScriptjs,
 } from 'react-google-maps';
 
-interface Props {}
-
-interface State {
-    directions: any;
-    correct: number;
+interface Props {
+    history: any;
 }
 
-class QuestMap extends Component<Props, State> {
-    constructor(props: any) {
-        super(props);
-        this.state = { correct: 1, directions: null };
+interface State {}
+
+class QuestMap extends Component<any, any> {
+    constructor(Props: any, State: any) {
+        super(Props, State);
+        this.state = { correct: 1 };
     }
 
-    private getLocation() {
+    getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(position => {
                 const DirectionsService = new google.maps.DirectionsService();
@@ -31,8 +30,8 @@ class QuestMap extends Component<Props, State> {
                             position.coords.longitude
                         ),
                         destination: new google.maps.LatLng(
-                            position.coords.latitude + 1,
-                            position.coords.longitude + 1
+                            position.coords.latitude,
+                            position.coords.longitude
                         ),
                         travelMode: google.maps.TravelMode.WALKING,
                     },
@@ -55,19 +54,20 @@ class QuestMap extends Component<Props, State> {
         }
     }
 
-    public componentDidMount() {
+    componentDidMount() {
         this.getLocation();
     }
 
     public render() {
-        const state = this.state;
+        const { t } = this.props;
+        const props = this.state;
         return (
             <GoogleMap
                 defaultZoom={8}
                 defaultCenter={{ lat: -34.397, lng: 150.644 }}
             >
-                {state.directions && (
-                    <DirectionsRenderer directions={state.directions} />
+                {props.directions && (
+                    <DirectionsRenderer directions={props.directions} />
                 )}
             </GoogleMap>
         );
