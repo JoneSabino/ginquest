@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import { withTranslation, WithTranslation } from 'react-i18next';
+import Container from 'react-bootstrap/Container';
 
-interface Props extends WithTranslation {}
+interface Props extends WithTranslation, Container {}
 
 interface Item {
     quizid: number;
@@ -20,11 +21,11 @@ interface Item {
 interface State {
     error: any;
     isLoaded: boolean;
-    items: Array<Item>;
+    items: Item[];
 }
 
 class QuizList extends Component<Props, State> {
-    constructor(props: any) {
+    constructor(props: Props) {
         super(props);
         this.state = {
             error: null,
@@ -77,13 +78,16 @@ class QuizList extends Component<Props, State> {
                 <ListGroup.Item key={item.quizid}>
                     {item.quizid} - {item.pergunta}
                 </ListGroup.Item>
+
                 {[1, 2, 3, 4, 5].map((index: number) => (
                     <ListGroup.Item
+                        key={index}
                         variant={item.correct === index ? 'success' : 'warning'}
                     >
                         {item[`resposta${index}`]}
                     </ListGroup.Item>
                 ))}
+
                 <Button
                     variant="danger"
                     name={item.quizid + ''}
@@ -97,6 +101,11 @@ class QuizList extends Component<Props, State> {
 
     public render(): JSX.Element {
         const { t } = this.props;
+        //const { computedMatch, ...rest } = this.props;
+
+        //const divProps = Object.assign({}, this.props);
+        //delete divProps.computedMatch;
+
         const { error, isLoaded, items } = this.state;
         if (error) {
             return (

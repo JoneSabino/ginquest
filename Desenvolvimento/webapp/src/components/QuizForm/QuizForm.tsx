@@ -3,15 +3,18 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { withTranslation, WithTranslation } from 'react-i18next';
 import { FormControl } from 'react-bootstrap';
+import { RouteComponentProps } from 'react-router';
 
-interface Props {
-    //history: any;
-    t: (text: string) => string;
+interface Props
+    extends WithTranslation,
+        RouteComponentProps /*extends RouteComponentProps */ {
+    // history: any;
+    // t: (text: string) => string;
 }
 
 interface State {}
 
-class QuizForm extends Component<any, State> {
+class QuizForm extends Component<Props, State> {
     constructor(props: Props) {
         super(props);
         this.state = { correct: 1 };
@@ -42,6 +45,13 @@ class QuizForm extends Component<any, State> {
         });
     }
 
+    private getPlaceHolder(text: string | object): string {
+        if (typeof text === 'string') {
+            return text;
+        }
+        return JSON.stringify(text);
+    }
+
     public render() {
         const { t } = this.props;
         return (
@@ -50,43 +60,26 @@ class QuizForm extends Component<any, State> {
                     <Form.Label>{t('Question')}</Form.Label>
                     <Form.Control
                         type="text"
-                        placeholder={t('Enter the question')}
+                        placeholder={this.getPlaceHolder(
+                            t('Enter the question')
+                        )}
                         name="pergunta"
                         onChange={this.changeHandler}
                     />
                 </Form.Group>
 
                 <Form.Group controlId="formAnswers">
-                    <Form.Control
-                        type="text"
-                        placeholder={t('Resposta1')}
-                        name="resposta1"
-                        onChange={(e: any) => this.changeHandler(e)}
-                    />
-                    <Form.Control
-                        type="text"
-                        placeholder={t('Resposta2')}
-                        name="resposta2"
-                        onChange={(e: any) => this.changeHandler(e)}
-                    />
-                    <Form.Control
-                        type="text"
-                        placeholder={t('Resposta3')}
-                        name="resposta3"
-                        onChange={(e: any) => this.changeHandler(e)}
-                    />
-                    <Form.Control
-                        type="text"
-                        placeholder={t('Resposta4')}
-                        name="resposta4"
-                        onChange={(e: any) => this.changeHandler(e)}
-                    />
-                    <Form.Control
-                        type="text"
-                        placeholder={t('Resposta5')}
-                        name="resposta5"
-                        onChange={(e: any) => this.changeHandler(e)}
-                    />
+                    {[1, 2, 3, 4, 5].map((index: number) => (
+                        <Form.Control
+                            key={index}
+                            type="text"
+                            placeholder={this.getPlaceHolder(
+                                t(`Resposta${index}`)
+                            )}
+                            name={`resposta${index}`}
+                            onChange={(e: any) => this.changeHandler(e)}
+                        />
+                    ))}
                 </Form.Group>
 
                 <Form.Group controlId="exampleForm.ControlSelect1">
@@ -96,11 +89,11 @@ class QuizForm extends Component<any, State> {
                         name="correct"
                         onChange={(e: any) => this.changeHandler(e)}
                     >
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
+                        {[1, 2, 3, 4, 5].map((index: number) => (
+                            <option key={index} value={index}>
+                                {index}
+                            </option>
+                        ))}
                     </Form.Control>
                 </Form.Group>
 

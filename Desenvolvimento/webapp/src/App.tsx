@@ -4,7 +4,7 @@ import Quiz from './screens/Quiz/Quiz';
 import Home from './screens/Home/Home';
 import Header from './components/Header/Header';
 import MyMap from './screens/MyMap/MyMap';
-import Container from 'react-bootstrap/Container';
+import BodyContainer from './components/BodyContainer/BodyContainer';
 
 interface Props {}
 
@@ -18,10 +18,10 @@ class App extends Component<Props, State> {
 
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <Container>
+                    <BodyContainer>
                         <Route path="/quiz" component={Quiz} />
                         <Route path="/map" component={MyMap} />
-                    </Container>
+                    </BodyContainer>
                 </Switch>
             </BrowserRouter>
         );
