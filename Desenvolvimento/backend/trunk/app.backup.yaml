@@ -1,0 +1,6 @@
+service: ginquest-backend
+env: flex
+runtime: nodejs
+endpoints_api_service:
+  name: ginquest-backend-dot-ginquest-app.appspot.com
+  rollout_strategy: managed
