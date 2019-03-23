@@ -31,5 +31,5 @@ npm config set https-proxy http://prontuario:password@10.102.2.253:3128
 
 ### Retirando proxy
 
-npm config unset proxy
-npm config unset https-proxy
+npm config delete proxy
+npm config delete https-proxy
