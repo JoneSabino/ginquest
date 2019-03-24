@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './Location.css';
-import LocationActivity from '../../components/LocationActivity/LocationActivity';
-import { withScriptjs } from 'react-google-maps';
+import LocationActivity from '../../components/Activity/LocationActivity/LocationActivity';
 
 interface Props {}
 
@@ -15,7 +14,7 @@ class Location extends Component<Props, State> {
                 <Switch>
                     <Route
                         exact
-                        path="/location"
+                        path="/activity/location"
                         component={LocationActivity}
                     />
                 </Switch>

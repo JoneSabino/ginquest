@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Quiz from './screens/Quiz/Quiz';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import Quiz from './components/Activity/QuizActivity/QuizActivity';
 import Location from './screens/Location/Location';
 import Home from './screens/Home/Home';
 import Header from './components/Header/Header';
 import BodyContainer from './components/BodyContainer/BodyContainer';
+import Activity from './screens/Activity/Activity';
 
 interface Props {}
 
@@ -15,13 +16,13 @@ class App extends Component<Props, State> {
         return (
             <BrowserRouter>
                 <div>
-                    <Route path="/" component={Header} />
+                    <Route component={Header} />
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <BodyContainer>
-                            <Route path="/quiz" component={Quiz} />
-                            <Route path="/location" component={Location} />
+                            <Route path="/activity" component={Activity} />
                         </BodyContainer>
+                        <Redirect from="*" to="/" />
                     </Switch>
                 </div>
             </BrowserRouter>

@@ -29,6 +29,7 @@ interface State {
     directions?: google.maps.DirectionsResult;
     origin?: google.maps.LatLng;
     error?: string;
+    watcherId?: number;
 }
 
 class MapWrapper extends Component<Props, State> {
@@ -54,7 +55,7 @@ class MapWrapper extends Component<Props, State> {
 
     private getRoute() {
         if (navigator.geolocation) {
-            navigator.geolocation.watchPosition(
+            const watcherId = navigator.geolocation.watchPosition(
                 position => {
                     const DirectionsService = new google.maps.DirectionsService();
                     const origin = new google.maps.LatLng(
@@ -67,8 +68,8 @@ class MapWrapper extends Component<Props, State> {
                     );
                     DirectionsService.route(
                         {
-                            origin: origin,
-                            destination: destination,
+                            origin,
+                            destination,
                             travelMode: google.maps.TravelMode.WALKING,
                         },
                         (result, status) => {
@@ -76,7 +77,7 @@ class MapWrapper extends Component<Props, State> {
                             if (status === google.maps.DirectionsStatus.OK) {
                                 this.setState({
                                     directions: result,
-                                    origin: origin,
+                                    origin,
                                 });
                             } else if (
                                 status ===
@@ -95,17 +96,20 @@ class MapWrapper extends Component<Props, State> {
                             } else {
                                 errorMessage = JSON.stringify(result);
                             }
-                            this.props.onPositionChanged(
-                                origin,
-                                this.circle.current!.getBounds(),
-                                errorMessage
-                            );
+                            if (this.circle.current) {
+                                this.props.onPositionChanged(
+                                    origin,
+                                    this.circle.current.getBounds(),
+                                    errorMessage
+                                );
+                            }
                         }
                     );
                 },
                 this.showError,
                 { maximumAge: 10000, timeout: 5000, enableHighAccuracy: true }
             );
+            this.setState({ watcherId });
         } else {
             console.log('Geolocation is not supported by this browser.');
         }
@@ -113,6 +117,10 @@ class MapWrapper extends Component<Props, State> {
 
     public componentDidMount(): void {
         this.getRoute();
+    }
+
+    public componentWillUnmount(): void {
+        navigator.geolocation.clearWatch(this.state.watcherId!);
     }
 
     private circle: React.RefObject<Circle>;

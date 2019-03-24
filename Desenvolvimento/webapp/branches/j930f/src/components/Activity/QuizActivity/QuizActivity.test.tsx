@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Quiz from './Quiz';
+import Quiz from './QuizActivity';
 import { MemoryRouter } from 'react-router';
 
 it('renders without crashing', () => {

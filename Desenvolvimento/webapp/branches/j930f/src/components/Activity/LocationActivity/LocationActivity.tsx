@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './LocationActivity.css';
-import MapWrapper from '../../components/MapWrapper/MapWrapper';
+import MapWrapper from '../../MapWrapper/MapWrapper';
 import Button from 'react-bootstrap/Button';
 import { RouteComponentProps } from 'react-router';
 import { WithTranslation, withTranslation } from 'react-i18next';
@@ -44,7 +44,7 @@ class LocationActivity extends Component<Props, State> {
     ): void {
         this.setState({
             insideCircle: circleBounds.contains(position),
-            errorMessage: errorMessage,
+            errorMessage,
         });
     }
 
