@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, RouteComponentProps } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
-import { withTranslation } from 'react-i18next';
+import { withTranslation, WithTranslation } from 'react-i18next';
 import i18next from 'i18next';
+
+interface Props extends WithTranslation, RouteComponentProps {}
 
 interface State {}
 
-class Header extends Component<any, State> {
+class Header extends Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+    }
+
     public render() {
         const { t } = this.props;
         return (
@@ -21,6 +27,12 @@ class Header extends Component<any, State> {
                     <Navbar.Toggle />
                     <Navbar.Collapse>
                         <Nav className="mr-auto">
+                            <Nav.Link as="div">
+                                <NavLink to="/location">
+                                    {t('Location')}
+                                </NavLink>
+                            </Nav.Link>
+
                             <NavDropdown title="Quiz" id="quiz-nav-dropdown">
                                 <NavDropdown.Item as="div">
                                     <NavLink to="/quiz">{t('List')}</NavLink>

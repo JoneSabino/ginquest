@@ -1,35 +1,41 @@
 import React, { Component } from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
+import { withTranslation, WithTranslation } from 'react-i18next';
 import Container from 'react-bootstrap/Container';
-import { withTranslation } from 'react-i18next';
+
+interface Props extends WithTranslation, Container {}
+
+interface Item {
+    quizid: number;
+    pergunta: string;
+    resposta1: string;
+    resposta2: string;
+    resposta3: string;
+    resposta4: string;
+    resposta5: string;
+    [key: string]: string | number;
+    correct: number;
+}
 
 interface State {
     error: any;
     isLoaded: boolean;
-    items: Array<{
-        quizid: number;
-        pergunta: string;
-        resposta1: string;
-        resposta2: string;
-        resposta3: string;
-        resposta4: string;
-        resposta5: string;
-        correct: number;
-    }>;
+    items: Item[];
 }
 
-class QuizList extends Component<any, State> {
-    constructor(Props: any) {
-        super(Props);
+class QuizList extends Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
         this.state = {
             error: null,
             isLoaded: false,
             items: [],
         };
+        this.deleteItem = this.deleteItem.bind(this);
     }
 
-    private getQuestions() {
+    private getQuestions(): void {
         fetch('https://ginquest-backend-dot-ginquest-app.appspot.com/quiz')
             .then(res => res.json())
             .then(
@@ -55,61 +61,37 @@ class QuizList extends Component<any, State> {
         this.getQuestions();
     }
 
-    private deleteItem(e: any) {
+    private deleteItem(e: React.MouseEvent<HTMLButtonElement>): void {
         fetch(
             'https://ginquest-backend-dot-ginquest-app.appspot.com/quiz/' +
-                e.target.name,
+                e.currentTarget.name,
             {
                 method: 'DELETE',
             }
         ).then(() => this.getQuestions());
     }
 
-    private renderItem(item: {
-        quizid: number;
-        pergunta: string;
-        resposta1: string;
-        resposta2: string;
-        resposta3: string;
-        resposta4: string;
-        resposta5: string;
-        correct: number;
-    }) {
+    private renderItem(item: Item): JSX.Element {
         const { t } = this.props;
         return (
             <ListGroup variant="flush" key={item.quizid}>
                 <ListGroup.Item key={item.quizid}>
                     {item.quizid} - {item.pergunta}
                 </ListGroup.Item>
-                <ListGroup.Item
-                    variant={item.correct == 1 ? 'success' : 'warning'}
-                >
-                    {item.resposta1}
-                </ListGroup.Item>
-                <ListGroup.Item
-                    variant={item.correct == 2 ? 'success' : 'warning'}
-                >
-                    {item.resposta2}
-                </ListGroup.Item>
-                <ListGroup.Item
-                    variant={item.correct == 3 ? 'success' : 'warning'}
-                >
-                    {item.resposta3}
-                </ListGroup.Item>
-                <ListGroup.Item
-                    variant={item.correct == 4 ? 'success' : 'warning'}
-                >
-                    {item.resposta4}
-                </ListGroup.Item>
-                <ListGroup.Item
-                    variant={item.correct == 5 ? 'success' : 'warning'}
-                >
-                    {item.resposta5}
-                </ListGroup.Item>
+
+                {[1, 2, 3, 4, 5].map((index: number) => (
+                    <ListGroup.Item
+                        key={index}
+                        variant={item.correct === index ? 'success' : 'warning'}
+                    >
+                        {item[`resposta${index}`]}
+                    </ListGroup.Item>
+                ))}
+
                 <Button
                     variant="danger"
                     name={item.quizid + ''}
-                    onClick={this.deleteItem.bind(this)}
+                    onClick={this.deleteItem}
                 >
                     {t('Deletar')}
                 </Button>
@@ -117,22 +99,22 @@ class QuizList extends Component<any, State> {
         );
     }
 
-    public render() {
+    public render(): JSX.Element {
         const { t } = this.props;
         const { error, isLoaded, items } = this.state;
         if (error) {
             return (
-                <Container>
+                <div>
                     {t('Error')}: {error.message}
-                </Container>
+                </div>
             );
         } else if (!isLoaded) {
-            return <Container>{t('Loading...')}</Container>;
+            return <div>{t('Loading...')}</div>;
         } else {
             return (
-                <Container key="teste">
+                <div key="teste">
                     {items.map(item => this.renderItem(item))}
-                </Container>
+                </div>
             );
         }
     }
