@@ -4,11 +4,9 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
     'en-US': {
         translation: {
-            'Welcome to React': 'Welcome to React and react-i18next!!!',
             Home: 'Home',
             'Language Select': 'Language Select',
             Edit: 'Edit',
-            'and save to reload': 'and save to reload',
             'Gincana Braba': 'Angry Gincana',
             'Loading...': 'Loading...',
             Error: 'Error',
@@ -24,15 +22,17 @@ const resources = {
             Submit: 'Submit',
             List: 'List',
             Create: 'Create',
+            Location: 'Location',
+            'Location.LocationNotFound': 'Location not found',
+            'Location.RouteNotFound': 'Route not found',
+            'Location.SubmitButton': 'Submit Location',
         },
     },
     'pt-BR': {
         translation: {
-            'Welcome to React': 'Bem vindo ao React e ao react-i18next!!!',
             Home: 'Início',
             'Language Select': 'Selecionar Idioma',
             Edit: 'Editar',
-            'and save to reload': 'e salve para recarregar',
             'Gincana Braba': 'Gincana Braba',
             'Loading...': 'Carregando...',
             Error: 'Erro',
@@ -48,6 +48,10 @@ const resources = {
             Submit: 'Enviar',
             List: 'Lista',
             Create: 'Criar',
+            Location: 'Localização',
+            'Location.LocationNotFound': 'Localização não encontrada',
+            'Location.RouteNotFound': 'Rota não encontrada',
+            'Location.SubmitButton': 'Enviar Localização',
         },
     },
 };

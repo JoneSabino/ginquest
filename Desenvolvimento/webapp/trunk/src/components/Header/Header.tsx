@@ -20,6 +20,7 @@ class Header extends Component<any, State> {
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse>
+                        <NavLink to="/desafio">{t('Desafio')}</NavLink>
                         <Nav className="mr-auto">
                             <NavDropdown title="Quiz" id="quiz-nav-dropdown">
                                 <NavDropdown.Item as="div">

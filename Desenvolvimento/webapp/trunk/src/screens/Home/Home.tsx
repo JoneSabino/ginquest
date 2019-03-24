@@ -3,9 +3,14 @@ import React, { Component } from 'react';
 import logo from '../../assets/icon512.png';
 import './Home.css';
 import Form from 'react-bootstrap/Form';
-import { withTranslation } from 'react-i18next';
+import { withTranslation, WithTranslation } from 'react-i18next';
+import { RouteChildrenProps } from 'react-router';
 
-class Home extends Component<any, any> {
+interface Props extends RouteChildrenProps, WithTranslation {}
+
+interface State {}
+
+class Home extends Component<Props, State> {
     constructor(props: any) {
         super(props);
     }
@@ -13,10 +18,8 @@ class Home extends Component<any, any> {
     public render() {
         const { t } = this.props;
         return (
-            <div className="App">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo" />
-                </header>
+            <div className="App App-header">
+                <img src={logo} className="App-logo" alt="logo" />
             </div>
         );
     }
