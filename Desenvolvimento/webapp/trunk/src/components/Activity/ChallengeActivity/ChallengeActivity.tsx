@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withTranslation, WithTranslation } from 'react-i18next';
 import QrReader from 'react-qr-reader';
-import apiService from '../../services/seila';
+import apiService from '../../../services/seila';
 
 interface Props extends WithTranslation {}
 
@@ -18,12 +18,16 @@ interface State {
 class Desafio extends Component<Props, State> {
     constructor(props: Props) {
         super(props);
-        this.state = { result: 'No result', isCompleted: false };
+        this.state = {
+            result: 'No result',
+            isCompleted: false,
+        };
         this.handleScan = this.handleScan.bind(this);
     }
 
     async componentDidMount() {
         let tarefa = await apiService.getTarefa(5);
+
         this.setState({
             tarefa,
         });

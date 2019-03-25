@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Desafio from './Desafio';
+import Desafio from './ChallengeActivity';
 
 jest.mock('react-qr-reader', () => (props: any) => {
     return <div />;
