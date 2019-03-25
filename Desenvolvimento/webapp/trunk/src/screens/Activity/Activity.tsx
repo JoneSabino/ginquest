@@ -10,7 +10,7 @@ interface Props extends RouteComponentProps {}
 interface State {}
 
 class Activity extends Component<Props, State> {
-    render() {
+    public render() {
         return (
             <div>
                 <Jumbotron>

@@ -25,17 +25,17 @@ class Desafio extends Component<Props, State> {
         this.handleScan = this.handleScan.bind(this);
     }
 
-    async componentDidMount() {
-        let tarefa = await apiService.getTarefa(5);
+    public async componentDidMount() {
+        const tarefa = await apiService.getTarefa(5);
 
         this.setState({
             tarefa,
         });
     }
 
-    handleScan = (data: string | null) => {
+    public handleScan = (data: string | null) => {
         if (data) {
-            if (this.state.tarefa && data == this.state.tarefa.qrcode) {
+            if (this.state.tarefa && data === this.state.tarefa.qrcode) {
                 this.setState({
                     isCompleted: true,
                 });
@@ -46,10 +46,10 @@ class Desafio extends Component<Props, State> {
             }
         }
     };
-    handleError = (err: any) => {
+    public handleError = (err: any) => {
         console.error(err);
     };
-    render() {
+    public render() {
         const {
             isCompleted = false,
             tarefa = { image: '', description: '' },
