@@ -8,6 +8,6 @@ interface State {}
 
 export default class BodyContainer extends Component<Props, State> {
     public render() {
-        return <Container>{this.props.children}</Container>;
+        return <Container fluid>{this.props.children}</Container>;
     }
 }

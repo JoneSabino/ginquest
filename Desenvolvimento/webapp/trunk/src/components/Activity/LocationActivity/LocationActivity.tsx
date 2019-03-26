@@ -4,22 +4,19 @@ import MapWrapper from '../../MapWrapper/MapWrapper';
 import Button from 'react-bootstrap/Button';
 import { WithTranslation, withTranslation } from 'react-i18next';
 import i18next from 'i18next';
-
-const mockDestination = {
-    lat: -23.554623,
-    lng: -46.905776,
-};
-
-const mockRadius = 100;
+import apiService from '../../../services/seila';
 
 interface Props extends WithTranslation {}
 
 interface State {
-    destination: {
-        lat: number;
-        lng: number;
+    locationActivityData?: {
+        id: number;
+        destination: {
+            lat: number;
+            lng: number;
+        };
+        radius: number;
     };
-    radius: number;
     insideCircle: boolean;
     errorMessage: string | null;
 }
@@ -29,9 +26,15 @@ class LocationActivity extends Component<Props, State> {
         super(pros, state);
         this.state = {
             insideCircle: false,
-            destination: mockDestination,
-            radius: mockRadius,
             errorMessage: null,
+            locationActivityData: {
+                id: 0,
+                destination: {
+                    lat: 0,
+                    lng: 0,
+                },
+                radius: 100,
+            },
         };
         this.positionChanged = this.positionChanged.bind(this);
     }
@@ -47,6 +50,16 @@ class LocationActivity extends Component<Props, State> {
         });
     }
 
+    public async componentWillMount() {
+        const locationActivityData = await apiService.getLocationActivityData(
+            5
+        );
+
+        this.setState({
+            locationActivityData,
+        });
+    }
+
     public render() {
         let error;
         if (this.state.errorMessage) {
@@ -56,8 +69,10 @@ class LocationActivity extends Component<Props, State> {
             <div>
                 <div>
                     <MapWrapper
-                        destination={this.state.destination}
-                        radius={this.state.radius}
+                        destination={
+                            this.state.locationActivityData!.destination
+                        }
+                        radius={this.state.locationActivityData!.radius}
                         onPositionChanged={this.positionChanged}
                         {...this.props}
                         googleMapURL={

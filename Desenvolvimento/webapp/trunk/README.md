@@ -52,3 +52,15 @@ React CheatSheet (https://devhints.io/react)
 Typescript CheatSheet (https://www.sitepen.com/blog/typescript-cheat-sheet)
 
 React Bootstrap (https://react-bootstrap.github.io/)
+
+## Proxy
+
+## Remove
+
+npm config rm proxy
+npm config rm https-proxy
+
+## Add
+
+npm config set proxy http://"<username>:<password>"@10.102.2.253:3128
+npm config set https-proxy http://"<username>:<password>"@10.102.2.253:3128
