@@ -1,2 +1,8 @@
 service: ginquest-backend
-runtime: nodejs10
+env: flex
+runtime: nodejs
+endpoints_api_service:
+  name: ginquest-backend-dot-ginquest-app.appspot.com
+  rollout_strategy: managed
+beta_settings:
+  cloud_sql_instances: ginquest-app:us-central1:ginquest

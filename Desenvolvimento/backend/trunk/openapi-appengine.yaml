@@ -11,6 +11,24 @@ produces:
 schemes:
   - "https"
 paths:
+  "/hello":
+    get:
+      description: "Returns the requests' authentication information."
+      operationId: "hello"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Authenication info."
+  "/":
+    get:
+      description: "Returns the requests' authentication information."
+      operationId: "hello world"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "Authenication info."
   "/quiz":
     get:
       description: "Returns the requests' authentication information."
