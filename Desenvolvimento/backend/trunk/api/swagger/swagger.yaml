@@ -1,0 +1,73 @@
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: GinQuest API
+# during dev, should point to your local machine
+host: ginquest-backend-dot-ginquest-app.appspot.com
+# basePath prefixes all resource paths
+basePath: /
+#
+schemes:
+  - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /quiz:
+    x-swagger-router-controller: quiz
+    get:
+      description: Retorna quiz
+      operationId: getQuiz
+      responses:
+        "200":
+          description: Success
+    delete:
+      description: Retorna quiz
+      operationId: deleteQuiz
+      responses:
+        "200":
+          description: Success
+    post:
+      description: Retorna quiz
+      operationId: postQuiz
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/QuizRequest'
+      responses:
+        "200":
+          description: Success
+  /version:
+    x-swagger-router-controller: util
+    get:
+      description: Retorna a versão da API
+      operationId: getVersion
+      responses:
+        "200":
+          description: Success
+  /swagger:
+    x-swagger-pipe: swagger_raw
+definitions:
+  QuizRequest:
+    properties:
+      pergunta:
+        type: string
+      resposta1:
+        type: string
+      resposta2:
+        type: string
+      resposta3:
+        type: string
+      resposta4:
+        type: string
+      resposta5:
+        type: string
+      correct:
+        type: integer
+    
