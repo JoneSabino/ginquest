@@ -1,0 +1,2177 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<log> 
+<logentry 
+   revision="57303"> 
+<author>Professor Ivan</author> 
+<date>2019-02-27T00:18:39.774422Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest</path> 
+<path 
+   kind="" 
+   action="M">/acessos.txt</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57304"> 
+<author>Renata Gadelha</author> 
+<date>2019-02-27T19:33:28.184220Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/Apresentacao</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/EntregaFinal</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/LaTeX</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/Notas</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/PropostaInicial</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Videos</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57305"> 
+<author>Renata Gadelha</author> 
+<date>2019-02-27T19:34:57.197230Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/URLS.txt</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57316"> 
+<author>Renata Gadelha</author> 
+<date>2019-02-28T23:08:57.636644Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/PropostaInicial/Apresentacao_Proposta_GinQuest.pdf</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/PropostaInicial/Proposta_Projeto_GinQuest.pdf</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57366"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-09T16:27:17.249068Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/.svnignore</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/.svnignore</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/README.md</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/package.json</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/public</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/favicon.ico</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/index.html</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/manifest.json</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/App.css</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/App.test.tsx</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/App.tsx</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/index.css</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/index.tsx</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/logo.svg</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/react-app-env.d.ts</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/serviceWorker.ts</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/tsconfig.json</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57367"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-09T16:30:43.717191Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57368"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-09T16:42:57.237114Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/package.json</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/api</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/index.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/navigation</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57369"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-09T16:46:26.316983Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/package.json</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/index.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57370"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-09T16:57:29.916558Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/.svnignore</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57394"> 
+<author>Renata Gadelha</author> 
+<date>2019-03-11T00:15:07.635973Z</date> 
+<paths> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/00-info.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/anexos</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/anexos/acronym.pdf</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/anexos/pdfpages.pdf</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/anexos/todonotes.pdf</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/defs-glossario.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/defs-siglas.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/exemplos</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/exemplos/abnt.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/exemplos/abntex2-doc-abnt-6023.bib</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/exemplos/exemploA3.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/exemplos/exemplo_diag_horizontal.png</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/exemplos/exemplos.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/exemplos/figuras.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/exemplos/qrcode.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/exemplos/referencias.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/exemplos/tabelas.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/exemplos/todo.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/ifsp-spo</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/ifsp-spo/logo-01-pb.jpg</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/ifsp-spo/logo-01.jpg</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/ifsp-spo/logo-02-pb.jpg</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/ifsp-spo/logo-02.jpg</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/ifsp-spo-inf-cemi.cls</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/ifsp-spo-inf-cpti.cls</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/ifsp-spo-inf-ctds.cls</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/ifsp-spo-inf.cls</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/ifsp-spo.cls</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/ifsp.cls</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/main-monografia.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/main-texto-completo.idx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/main-texto-completo.lof</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/main-texto-completo.loq</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/main-texto-completo.lot</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/main-texto-completo.pdf</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/main-texto-completo.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/main-texto-proposta.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/pos-anexos.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/pos-apendices.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/pos-glossario.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/pre-agradecimentos.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/pre-aprovacao.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/pre-dedicatoria.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/pre-epigrafe.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/pre-errata.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/pre-fichacatalografica.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/pre-resumos.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/pre-siglas.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/pre-simbolos.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/referencias.bib</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/textos-conclusao.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/textos-desenvolvimento.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/textos-introducao.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Documentos/LaTeX/textos-revisao-literatura.tex</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Scripts</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57451"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-15T23:28:33.946424Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/README.md</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/app.yaml</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/icon.png</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/icon512.png</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57452"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-16T01:02:58.422317Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/README.md</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/package.json</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/App.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/i18n.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/index.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57458"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-16T15:58:15.627968Z</date> 
+<paths> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/.gcloudignore</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/.prettierrc</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/.tslint.json</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/app.yaml</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/package.json</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/assets</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/assets/logo.svg</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/App</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/App/App.test.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/App/App.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Content</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Content/Content.test.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Content/Content.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header/Header.test.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header/Header.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/i18n.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/index.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Gincana</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Gincana/Gincana.css</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Gincana/Gincana.test.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Gincana/Gincana.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Home</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Home/Home.css</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Home/Home.test.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Home/Home.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/serviceWorker.ts</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57459"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-16T16:44:59.852742Z</date> 
+<paths> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/.gcloudignore</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/app.yaml</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/index.js</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/package.json</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/yarn.lock</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/README.md</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57465"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-16T20:25:11.328186Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/.tslint.json</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/app.yaml</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/package.json</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/App/App.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Content/Content.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header/Header.tsx</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizForm</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizForm/QuizForm.tsx</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/i18n.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/index.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Home/Home.tsx</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Quiz</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Quiz/Quiz.css</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Quiz/Quiz.test.tsx</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Quiz/Quiz.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57466"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-16T20:29:03.354359Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57467"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-16T20:58:43.947330Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57468"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-16T21:00:40.692267Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57478"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-17T16:10:59.393801Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/app.yaml</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/manifest.json</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/index.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57482"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-17T17:05:30.594480Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/.gcloudignore</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/App.tsx</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/App</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Content</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizForm</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/index.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57483"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-17T17:17:30.599406Z</date> 
+<paths> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header" 
+   copyfrom-rev="57478" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header/Header.test.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header/Header.tsx</path> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizForm" 
+   copyfrom-rev="57478" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizForm</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizForm/QuizForm.tsx</path> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList" 
+   copyfrom-rev="57478" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57485"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-17T19:53:01.008865Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header/Header.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizForm/QuizForm.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/i18n.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Gincana/Gincana.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Home/Home.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57486"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-17T20:00:17.816926Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Gincana/Gincana.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57488"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-17T20:04:28.976929Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/.tslint.json</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/app.yaml</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/package.json</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/index.html</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/manifest.json</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/App.test.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/App.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header/Header.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizForm/QuizForm.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/index.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57489"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-17T20:25:21.907104Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header/Header.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Home/Home.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57490"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-17T23:43:23.008375Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/app.yaml</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57492"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-18T00:01:58.845244Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/index.html</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/App.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57506"> 
+<author>Renata Gadelha</author> 
+<date>2019-03-18T12:51:34.219229Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/URLS.txt</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57507"> 
+<author>Renata Gadelha</author> 
+<date>2019-03-18T12:56:23.368054Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/LaTeX/main-texto-conceito.tex</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Documentos/LaTeX/main-texto-proposta.tex</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Documentos/LaTeX/referencias.bib</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Documentos/LaTeX/textos-introducao.tex</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Documentos/LaTeX/textos-revisao-literatura.tex</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57529"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-18T22:44:50.575327Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57531"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-18T22:50:56.202593Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header/Header.test.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Quiz/Quiz.test.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57536"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-19T00:39:41.637474Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/backend</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/backend/package-lock.json</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57540"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-19T00:52:17.561359Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/Icon-GinQuest_v2.png</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/Logo-GinQuest.jpg</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/icon.png</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/icon2.png</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/icon512.png</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/icon5122.png</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57542"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-19T01:10:21.297154Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/Icon-GinQuest_v2.png</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/favicon.ico</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/icon.png</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/public/manifest.json</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/assets/icon512.png</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Home/Home.css</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Home/Home.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57695"> 
+<author>Renata Gadelha</author> 
+<date>2019-03-21T21:37:00.622188Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/LaTeX/images</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/LaTeX/images/poc</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/LaTeX/images/poc/poc_arquitetura.jpg</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/LaTeX/images/poc/poc_gource.jpg</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/LaTeX/main-texto-poc.tex</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Documentos/LaTeX/referencias.bib</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Documentos/LaTeX/textos-introducao.tex</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57696"> 
+<author>Renata Gadelha</author> 
+<date>2019-03-21T21:37:30.816262Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Scripts/Gource</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Scripts/Gource/01_GeraLog.bat</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Scripts/Gource/02_SubstituiIDs.bat</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Scripts/Gource/03_GeraGource.bat</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Scripts/Gource/04_GeraVideo.bat</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Scripts/Gource/Avatar</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Scripts/Gource/Avatar/Jones Sabino.png</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Scripts/Gource/Avatar/Murilo Vicente.png</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Scripts/Gource/Avatar/Renata Gadelha.png</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Scripts/Gource/Avatar/Rodrigo Bressan.png</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Scripts/Gource/Avatar/Victor Kawamoto.png</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57697"> 
+<author>Renata Gadelha</author> 
+<date>2019-03-21T21:37:50.149578Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/ProvaDeConceito</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/ProvaDeConceito/Apresentacao_ProvaDeConceito_GinQuest.pdf</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/ProvaDeConceito/Doc_ProvaDeConceito_GinQuest.pdf</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Documentos/ProvaDeConceito/URLs_ProvaDeConceito_GinQuest.txt</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57714"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-21T23:44:35.235592Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/README.md</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/package.json</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/App.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Header/Header.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Map</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Map/Map.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizForm/QuizForm.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/i18n.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/MyMap</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/MyMap/MyMap.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57716"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-21T23:46:21.987673Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Home/Home.css</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57719"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-22T00:24:25.612601Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Map/Map.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizForm/QuizForm.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57729"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-22T22:30:08.250667Z</date> 
+<paths> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/README.md</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/README.md</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57736"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-23T03:10:47.868500Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/README.md</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/package.json</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/App.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/Map/Map.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizForm/QuizForm.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/screens/Quiz/Quiz.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57737"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-23T14:20:08.186197Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/App.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizForm/QuizForm.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/QuizList/QuizList.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57738"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-23T14:20:28.711709Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/BodyContainer</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/src/components/BodyContainer/BodyContainer.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57739"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T14:28:13.311521Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/README.md</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/app.yaml</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/package.json</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/public</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/src</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/tags</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk</path> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/README.md" 
+   copyfrom-rev="57729" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/README.md</path> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/app.yaml" 
+   copyfrom-rev="57738" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/app.yaml</path> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/package.json" 
+   copyfrom-rev="57716" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/package.json</path> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/public" 
+   copyfrom-rev="57738" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/public</path> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/src" 
+   copyfrom-rev="57716" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src</path> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/tsconfig.json" 
+   copyfrom-rev="57738" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/tsconfig.json</path> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock" 
+   copyfrom-rev="57716" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/yarn.lock</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/tsconfig.json</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57740"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T14:36:40.842640Z</date> 
+<paths> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk" 
+   copyfrom-rev="57739" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/#j9322</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57741"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T15:26:07.967304Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/.prettierrc</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/.svnignore</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/.tslint.json</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/#j9322</path> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/.prettierrc" 
+   copyfrom-rev="57740" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/.prettierrc</path> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/.svnignore" 
+   copyfrom-rev="57740" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/.svnignore</path> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/.tslint.json" 
+   copyfrom-rev="57740" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/.tslint.json</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57742"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T15:28:58.563572Z</date> 
+<paths> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk" 
+   copyfrom-rev="57741" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/#j9322</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57743"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T15:29:36.010010Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/#j9322</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57744"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T15:30:23.159294Z</date> 
+<paths> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk" 
+   copyfrom-rev="57743" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9322</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57745"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-23T15:31:48.464188Z</date> 
+<paths> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk" 
+   copyfrom-rev="57744" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57746"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T15:35:17.449312Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9322</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57747"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T15:36:20.819049Z</date> 
+<paths> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk" 
+   copyfrom-rev="57746" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9320</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57748"> 
+<author>Jones Sabino</author> 
+<date>2019-03-23T17:34:55.189087Z</date> 
+<paths> 
+<path 
+   kind="" 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk" 
+   copyfrom-rev="57747" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/kg99a</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57752"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T19:20:49.308991Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9320</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9320/package.json</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9320/src/App.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9320/src/components/Header/Header.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9320/src/screens/Desafio</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9320/src/screens/Desafio/Desafio.test.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9320/src/screens/Desafio/Desafio.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9320/src/services</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9320/src/services/seila.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9320/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57754"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T19:30:15.259347Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/README.md</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57761"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T19:54:56.218178Z</date> 
+<paths> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/app.yaml</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/branches</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/index.js</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/package-lock.json</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/package.json</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/tags</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/trunk</path> 
+<path 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/backend/app.yaml" 
+   copyfrom-rev="57760" 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/trunk/app.yaml</path> 
+<path 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/backend/index.js" 
+   copyfrom-rev="57760" 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/trunk/index.js</path> 
+<path 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/backend/package-lock.json" 
+   copyfrom-rev="57760" 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/trunk/package-lock.json</path> 
+<path 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/backend/package.json" 
+   copyfrom-rev="57760" 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/trunk/package.json</path> 
+<path 
+   copyfrom-path="/S201901-QUI/ginquest/Desenvolvimento/backend/yarn.lock" 
+   copyfrom-rev="57760" 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/trunk/yarn.lock</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/backend/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57763"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T20:29:05.206607Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/backend/trunk/app.yaml</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57764"> 
+<author>Murilo Vicente</author> 
+<date>2019-03-23T20:30:24.681329Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/backend/trunk/.gcloudignore</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/backend/trunk/app.backup.yaml</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/backend/trunk/openapi-appengine.yaml</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57771"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-24T02:21:29.915579Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/README.md</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/public</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/App.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/api</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/assets</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/BodyContainer</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/BodyContainer/BodyContainer.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Header</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Header/Header.tsx</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/LocationActivity</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/LocationActivity/LocationActivity.css</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/LocationActivity/LocationActivity.tsx</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Map</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/MapWrapper</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/MapWrapper/MapWrapper.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/QuizForm</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/QuizForm/QuizForm.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/QuizList</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/QuizList/QuizList.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/i18n.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/navigation</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Gincana</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Home</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Location</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Location/Location.css</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Location/Location.test.tsx</path> 
+<path 
+   kind="" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Location/Location.tsx</path> 
+<path 
+   kind="" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/MyMap</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Quiz</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57772"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-24T02:56:24.173286Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/public</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/api</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/assets</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/BodyContainer</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Header</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/LocationActivity</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/MapWrapper</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/QuizForm</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/QuizList</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/navigation</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Gincana</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Home</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Location</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Quiz</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57781"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-24T18:00:29.751822Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/package.json</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/public</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/App.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/api</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/assets</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Activity</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Activity/LocationActivity</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Activity/LocationActivity/LocationActivity.css</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Activity/LocationActivity/LocationActivity.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Activity/QuizActivity</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Activity/QuizActivity/QuizActivity.css</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Activity/QuizActivity/QuizActivity.test.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Activity/QuizActivity/QuizActivity.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Activity/QuizActivity/QuizForm</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Activity/QuizActivity/QuizForm/QuizForm.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Activity/QuizActivity/QuizList</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Activity/QuizActivity/QuizList/QuizList.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/BodyContainer</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Header</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/Header/Header.tsx</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/LocationActivity</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/MapWrapper</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/MapWrapper/MapWrapper.tsx</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/components/QuizForm</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/navigation</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Activity</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Activity/Activity.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Gincana</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Home</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Home/Home.css</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Home/Home.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Location</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Location/Location.tsx</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/src/screens/Quiz</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57788"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-24T23:17:27.075979Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j930f</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/j9320</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/package.json</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/App.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Header/Header.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/QuizList/QuizList.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/i18n.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Desafio</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Desafio/Desafio.test.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Desafio/Desafio.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Home/Home.css</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Home/Home.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/services</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/services/seila.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57790"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-25T00:42:24.779393Z</date> 
+<paths> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/README.md</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/package.json</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/App.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/ChallengeActivity</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/ChallengeActivity/ChallengeActivity.css</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/ChallengeActivity/ChallengeActivity.test.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/ChallengeActivity/ChallengeActivity.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/LocationActivity</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/LocationActivity/LocationActivity.css</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/LocationActivity/LocationActivity.test.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/LocationActivity/LocationActivity.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/QuizActivity</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/QuizActivity/QuizActivity.css</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/QuizActivity/QuizActivity.test.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/QuizActivity/QuizActivity.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/QuizActivity/QuizForm</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/QuizActivity/QuizForm/QuizForm.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/QuizActivity/QuizList</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/QuizActivity/QuizList/QuizList.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/BodyContainer</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/BodyContainer/BodyContainer.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Header/Header.css</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Header/Header.test.tsx</path> 
+<path 
+   action="M" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Header/Header.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/MapWrapper</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/MapWrapper/MapWrapper.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Activity</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Activity/Activity.css</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Activity/Activity.test.tsx</path> 
+<path 
+   action="A" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Activity/Activity.tsx</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Desafio/Desafio.test.tsx</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Desafio/Desafio.tsx</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/MyMap</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57791"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-25T00:44:13.712629Z</date> 
+<paths> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Map</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/QuizForm</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/QuizList</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Desafio</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Gincana</path> 
+<path 
+   action="D" 
+   kind="">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Quiz</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57792"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-25T01:07:15.704899Z</date> 
+<paths> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/public</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/api</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/assets</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/ChallengeActivity</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/ChallengeActivity/ChallengeActivity.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/LocationActivity</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/QuizActivity</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/QuizActivity/QuizForm</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/QuizActivity/QuizList</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/BodyContainer</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Header</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/MapWrapper</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/navigation</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Activity</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Activity/Activity.tsx</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Home</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/services</path> 
+<path 
+   kind="" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57805"> 
+<author>Rodrigo Bressan</author> 
+<date>2019-03-26T01:08:08.146197Z</date> 
+<paths> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/README.md</path> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/Activity/LocationActivity/LocationActivity.tsx</path> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/components/BodyContainer/BodyContainer.tsx</path> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Activity/Activity.tsx</path> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/services/seila.tsx</path> 
+<path 
+   kind="file" 
+   action="D">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57814"> 
+<author>Renata Gadelha</author> 
+<date>2019-03-27T16:25:40.373192Z</date> 
+<paths> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/public/Logo-GinQuest.jpg</path> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/public/icon512.png</path> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/App.css</path> 
+<path 
+   kind="file" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/assets/bg-landscape.svg</path> 
+<path 
+   kind="file" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/assets/bg-treasurex.svg</path> 
+<path 
+   kind="file" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/assets/btn-flag-left.svg</path> 
+<path 
+   kind="file" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/assets/btn-primary.svg</path> 
+<path 
+   kind="file" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/assets/btn-secondary.svg</path> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Home/Home.css</path> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Home/Home.tsx</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57832"> 
+<author>Renata Gadelha</author> 
+<date>2019-03-28T22:27:14.674848Z</date> 
+<paths> 
+<path 
+   kind="dir" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57833"> 
+<author>Jones Sabino</author> 
+<date>2019-03-28T23:59:58.272853Z</date> 
+<paths> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/kg99a/package.json</path> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/kg99a/src/screens/Home/Home.tsx</path> 
+<path 
+   kind="file" 
+   action="A">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/kg99a/src/screens/termo-de-uso.tsx</path> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/branches/kg99a/yarn.lock</path> 
+</paths> 
+</logentry> 
+<logentry 
+   revision="57834"> 
+<author>Renata Gadelha</author> 
+<date>2019-03-29T00:14:50.242870Z</date> 
+<paths> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/App.css</path> 
+<path 
+   kind="file" 
+   action="M">/S201901-QUI/ginquest/Desenvolvimento/webapp/trunk/src/screens/Home/Home.css</path> 
+</paths> 
+</logentry> 
+</log> 
