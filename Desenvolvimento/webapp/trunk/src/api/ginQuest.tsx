@@ -1,4 +1,4 @@
-import { ginQuestAPI } from '../env.dev.json';
+import { ginQuestAPI } from '../env.prod.json';
 
 const seila = {
     async getTarefa(id: number) {
