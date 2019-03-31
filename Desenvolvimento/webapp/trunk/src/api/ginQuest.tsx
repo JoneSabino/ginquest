@@ -2,26 +2,23 @@ import { ginQuestAPI } from '../env.prod.json';
 
 const seila = {
     async getTarefa(id: number) {
-        let result = await fetch(`${ginQuestAPI}/tarefa/${id}`).then(response =>
-            response.json()
+        const result = await fetch(`${ginQuestAPI}/tarefa/${id}`).then(
+            response => response.json()
         );
-        // @ts-ignore
         return result;
     },
     async getTarefaQuiz(id: number) {
-        let result = await fetch(`${ginQuestAPI}/tarefa/${id}`);
+        const result = await fetch(`${ginQuestAPI}/tarefa/${id}`);
         // @ts-ignore
         return result.data;
     },
     async getGincanas() {
-        return [
-            { idgincana: 1, nome: 'Uma gincana', criador: 1 },
-            { idgincana: 2, nome: 'Outra gincana', criador: 1 },
-            { idgincana: 3, nome: 'Dois gincana', criador: 1 },
-            { idgincana: 4, nome: 'Ora pois gincana', criador: 1 },
-        ];
+        const result = await fetch(`${ginQuestAPI}/gincana`).then(response =>
+            response.json()
+        );
+        return result;
     },
-    async getGincana(id: number) {
+    async getGincana(id: string) {
         return {
             idgincana: 1,
             nome: 'Uma gincana',
@@ -37,13 +34,13 @@ const seila = {
                     nome: 'Tarefa de desafio',
                 },
                 {
-                    idtarefa: 1,
+                    idtarefa: 2,
                     idgincana: 1,
                     idtipotarefa: 2,
                     nome: 'Tarefa de Quiz',
                 },
                 {
-                    idtarefa: 1,
+                    idtarefa: 3,
                     idgincana: 1,
                     idtipotarefa: 3,
                     nome: 'Tarefa de Localização',
@@ -54,10 +51,8 @@ const seila = {
     getLocationActivityData(id: number) {
         return {
             id,
-            destination: {
-                lat: -23.554623,
-                lng: -46.905776,
-            },
+            destination_lat: -23.554623,
+            destination_lng: -46.905776,
             radius: 100,
         };
     },

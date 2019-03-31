@@ -22,11 +22,11 @@ class Activity extends Component<Props, State> {
 
     async componentDidMount() {
         // @ts-ignore
-        if (this.props.match!.params.id) {
-            const tarefa = await apiService.getTarefa(
-                // @ts-ignore
-                this.props.match!.params.id
-            );
+        const id = this.props.match!.params.id;
+        let isNumber = Number.isInteger(Number(id));
+
+        if (id && isNumber) {
+            const tarefa = await apiService.getTarefa(id);
             this.setState({ tarefa });
         }
     }
@@ -36,14 +36,12 @@ class Activity extends Component<Props, State> {
 
         let activity;
         if (idtipotarefa === 1) {
-            activity = <DesafioActivity tarefa={this.state.tarefa} />;
+            activity = <DesafioActivity {...this.state.tarefa} />;
         } else if (idtipotarefa === 2) {
             activity = <QuizActivity />;
         } else if (idtipotarefa === 3) {
-            activity = <LocationActivity />;
+            activity = <LocationActivity tarefa={this.state.tarefa} />;
         }
-
-        console.log(activity);
 
         return (
             <div>

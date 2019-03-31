@@ -4,19 +4,19 @@ import MapWrapper from '../../MapWrapper/MapWrapper';
 import Button from 'react-bootstrap/Button';
 import { WithTranslation, withTranslation } from 'react-i18next';
 import i18next from 'i18next';
-import apiService from '../../../api/ginQuest';
 
-interface Props extends WithTranslation {}
-
-interface State {
-    locationActivityData?: {
-        id: number;
-        destination: {
-            lat: number;
-            lng: number;
-        };
+interface Props extends WithTranslation {
+    tarefa: {
+        idtarefa: number;
+        idtipotarefa: number;
+        nome: string;
+        destination_lat: number;
+        destination_lng: number;
         radius: number;
     };
+}
+
+interface State {
     insideCircle: boolean;
     errorMessage: string | null;
 }
@@ -29,14 +29,6 @@ class LocationActivity extends Component<Props, State> {
         this.state = {
             insideCircle: false,
             errorMessage: null,
-            locationActivityData: {
-                id: 0,
-                destination: {
-                    lat: 0,
-                    lng: 0,
-                },
-                radius: 100,
-            },
         };
         this.positionChanged = this.positionChanged.bind(this);
         this._isMounted = true;
@@ -58,30 +50,21 @@ class LocationActivity extends Component<Props, State> {
         this._isMounted = false;
     }
 
-    public async componentDidMount() {
-        const locationActivityData = await apiService.getLocationActivityData(
-            5
-        );
-
-        this._isMounted &&
-            this.setState({
-                locationActivityData,
-            });
-    }
-
     public render() {
         let error;
         if (this.state.errorMessage) {
             error = <h1>{this.state.errorMessage}</h1>;
         }
+        const { destination_lat, destination_lng, radius } = this.props.tarefa;
         return (
             <div>
                 <div>
                     <MapWrapper
-                        destination={
-                            this.state.locationActivityData!.destination
-                        }
-                        radius={this.state.locationActivityData!.radius}
+                        destination={{
+                            lat: Number(destination_lat),
+                            lng: Number(destination_lng),
+                        }}
+                        radius={Number(radius)}
                         onPositionChanged={this.positionChanged}
                         {...this.props}
                         googleMapURL={

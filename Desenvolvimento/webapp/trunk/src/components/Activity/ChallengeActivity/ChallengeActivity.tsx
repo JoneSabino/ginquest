@@ -3,11 +3,9 @@ import { withTranslation, WithTranslation } from 'react-i18next';
 import QrReader from 'react-qr-reader';
 
 interface Props extends WithTranslation {
-    tarefa: {
-        qrcode: string;
-        description?: string;
-        image?: any;
-    };
+    qrcode: string;
+    description?: string;
+    image?: any;
 }
 
 interface State {
@@ -30,7 +28,7 @@ class Desafio extends Component<Props, State> {
 
     public handleScan = (data: string | null) => {
         if (data) {
-            if (this.props.tarefa && data === this.props.tarefa.qrcode) {
+            if (data === this.props.qrcode) {
                 this._isMounted &&
                     this.setState({
                         isCompleted: true,
@@ -53,7 +51,7 @@ class Desafio extends Component<Props, State> {
     };
     public render() {
         const { isCompleted = false, result = '' } = this.state || {};
-        const { image = '', description = '' } = this.props.tarefa;
+        const { image = '', description = '' } = this.props;
         const tela = (
             <div>
                 {image ? (
