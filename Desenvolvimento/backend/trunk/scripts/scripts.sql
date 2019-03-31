@@ -22,3 +22,25 @@ create table Tarefa (
 insert into Tarefa(IdGincana, IdTipoTarefa, Nome) values (1, 1, 'Tarefa de desafio');
 insert into Tarefa(IdGincana, IdTipoTarefa, Nome) values (1, 2, 'Tarefa de quiz');
 insert into Tarefa(IdGincana, IdTipoTarefa, Nome) values (1, 3, 'Tarefa de localização');
+create table TipoAtributo (
+    IdTipoAtributo serial primary key,
+    Nome text not null
+);
+create table TarefaAtributoValor (
+    IdTarefa int references Tarefa(IdTarefa),
+    IdTipoTarefa int references TipoTarefa(IdTipoTarefa),
+    IdTipoAtributo int references TipoAtributo(IdTipoAtributo),
+    Valor text
+);
+insert into TipoAtributo(Nome) values ('description');
+insert into TipoAtributo(Nome) values ('qrcode');
+insert into TipoAtributo(Nome) values ('image');
+insert into TipoAtributo(Nome) values ('destination_lat');
+insert into TipoAtributo(Nome) values ('destination_lng');
+insert into TipoAtributo(Nome) values ('radius');
+insert into TarefaAtributoValor values(1, 1, 1, 'Para completar essa tarefa leia um qrcode');
+insert into TarefaAtributoValor values(1, 1, 2, 'http://en.m.wikipedia.org');
+insert into TarefaAtributoValor values(1, 1, 3, 'http://s2.glbimg.com/ghFXiTWz85oCFk-SHWci8rrMz44=/e.glbimg.com/og/ed/f/original/2016/05/02/y3hp4en.jpg');
+insert into TarefaAtributoValor values(3, 3, 4, '-23.554623');
+insert into TarefaAtributoValor values(3, 3, 5, '-46.905776');
+insert into TarefaAtributoValor values(3, 3, 6, '100');

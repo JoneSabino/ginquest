@@ -14,7 +14,8 @@ function getQuiz(req, res) {
       console.error(err);
       res.status(500).send(err);
     } else {
-      res.json(JSON.stringify(results));
+      console.log(results.rows);
+      res.json(results.rows);
     }
   });
 }
