@@ -2,6 +2,7 @@ import i18n from 'i18next';
 import ptBR from './pt-BR';
 import enUS from './en-US';
 import { initReactI18next } from 'react-i18next';
+import moment from 'moment';
 
 const resources = {
     'en-US': enUS,
@@ -17,6 +18,10 @@ i18n.use(initReactI18next) // passes i18n down to react-i18next
 
         interpolation: {
             escapeValue: false, // react already safes from xss
+            format(value, format, lng) {
+                if (value instanceof Date) return moment(value).format(format);
+                return value;
+            },
         },
     });
 

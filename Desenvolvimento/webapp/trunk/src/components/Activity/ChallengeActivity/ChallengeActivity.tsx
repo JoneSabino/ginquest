@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withTranslation, WithTranslation } from 'react-i18next';
 import QrReader from 'react-qr-reader';
-import apiService from '../../../services/seila';
+import apiService from '../../../services/ginQuestApi';
 
 interface Props extends WithTranslation {}
 

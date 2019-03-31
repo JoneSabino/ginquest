@@ -24,6 +24,8 @@ const pt_BR = {
         'Location.SubmitButton': 'Enviar Localização',
         'Home.NewUser': 'Sou um novo usuário',
         'Home.ForgotPassword': 'Oooops! Esqueci minha senha!',
+        CRIADO_POR_EM:
+            'Criado por: {{ nome }} em {{ dataCriacao, DD/MM/YYYY }}',
     },
 };
 

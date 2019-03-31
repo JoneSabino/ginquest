@@ -24,6 +24,8 @@ const en_US = {
         'Location.SubmitButton': 'Submit Location',
         'Home.NewUser': "I'm a new user",
         'Home.ForgotPassword': 'Oooops! I forgot my password!',
+        CRIADO_POR_EM:
+            'Criado por: {{ nome }} em {{ dataCriacao, MM/DD/YYYY }}',
     },
 };
 

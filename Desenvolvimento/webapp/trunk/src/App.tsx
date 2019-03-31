@@ -4,6 +4,8 @@ import Home from './screens/Home/Home';
 import Header from './components/Header/Header';
 import BodyContainer from './components/BodyContainer/BodyContainer';
 import Activity from './screens/Activity/Activity';
+import Gincanas from './screens/Gincanas/Gincanas';
+import Gincana from './screens/Gincana/Gincana';
 
 interface Props {}
 
@@ -19,6 +21,8 @@ class App extends Component<Props, State> {
                         <Route exact path="/" component={Home} />
                         <BodyContainer>
                             <Route path="/activity" component={Activity} />
+                            <Route path="/gincanas" component={Gincanas} />
+                            <Route path="/gincana/:id" component={Gincana} />
                         </BodyContainer>
                         <Redirect from="*" to="/" />
                     </Switch>
