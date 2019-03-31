@@ -2,17 +2,50 @@ import React, { Component } from 'react';
 import { Route, Switch, RouteComponentProps, withRouter } from 'react-router';
 import QuizActivity from '../../components/Activity/QuizActivity/QuizActivity';
 import LocationActivity from '../../components/Activity/LocationActivity/LocationActivity';
-import Desafio from '../../components/Activity/ChallengeActivity/ChallengeActivity';
+import DesafioActivity from '../../components/Activity/ChallengeActivity/ChallengeActivity';
 import Image from 'react-bootstrap/Image';
 import { Col, Row, NavDropdown, ProgressBar } from 'react-bootstrap';
 import logo from '../../assets/logo.svg';
+import apiService from '../../api/ginQuest';
 
 interface Props extends RouteComponentProps {}
 
-interface State {}
+interface State {
+    idtipotarefa?: number;
+}
 
 class Activity extends Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+        this.state = {};
+    }
+
+    async componentDidMount() {
+        // @ts-ignore
+        if (this.props.match!.params.id) {
+            const tarefa = await apiService.getTarefa(
+                // @ts-ignore
+                this.props.match!.params.id
+            );
+            console.log(tarefa.idtipotarefa);
+            this.setState({ idtipotarefa: tarefa.idtipotarefa });
+        }
+    }
+
     public render() {
+        const { idtipotarefa } = this.state;
+
+        let activity;
+        if (idtipotarefa === 1) {
+            activity = <QuizActivity />;
+        } else if (idtipotarefa === 2) {
+            activity = <LocationActivity />;
+        } else if (idtipotarefa === 3) {
+            activity = <DesafioActivity />;
+        }
+
+        console.log(activity);
+
         return (
             <div>
                 <Row>
@@ -43,20 +76,24 @@ class Activity extends Component<Props, State> {
                     </Col>
                 </Row>
 
-                <Switch>
-                    <Route
-                        path={`${this.props.match!.url}/quiz`}
-                        component={QuizActivity}
-                    />
-                    <Route
-                        path={`${this.props.match!.url}/location`}
-                        component={LocationActivity}
-                    />
-                    <Route
-                        path={`${this.props.match!.url}/desafio`}
-                        component={Desafio}
-                    />
-                </Switch>
+                {activity ? (
+                    activity
+                ) : (
+                    <Switch>
+                        <Route
+                            path={`${this.props.match!.url}/quiz`}
+                            component={QuizActivity}
+                        />
+                        <Route
+                            path={`${this.props.match!.url}/location`}
+                            component={LocationActivity}
+                        />
+                        <Route
+                            path={`${this.props.match!.url}/desafio`}
+                            component={DesafioActivity}
+                        />
+                    </Switch>
+                )}
             </div>
         );
     }

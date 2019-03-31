@@ -1,7 +1,15 @@
-const apiHost = '';
+import { ginQuestAPI } from '../env.json';
 
 const seila = {
-    getTarefa(id: number) {
+    async getTarefa(id: number) {
+        return {
+            idtarefa: 1,
+            idgincana: 1,
+            idtipotarefa: 1,
+            nome: 'Tarefa de desafio',
+        };
+    },
+    getTarefaQuiz(id: number) {
         return {
             id,
             qrcode: 'http://en.m.wikipedia.org',
@@ -26,7 +34,26 @@ const seila = {
                 idusuario: 1,
                 nome: 'Zézinho',
             },
-            tarefas: [],
+            tarefas: [
+                {
+                    idtarefa: 1,
+                    idgincana: 1,
+                    idtipotarefa: 1,
+                    nome: 'Tarefa de desafio',
+                },
+                {
+                    idtarefa: 1,
+                    idgincana: 1,
+                    idtipotarefa: 2,
+                    nome: 'Tarefa de Quiz',
+                },
+                {
+                    idtarefa: 1,
+                    idgincana: 1,
+                    idtipotarefa: 3,
+                    nome: 'Tarefa de Localização',
+                },
+            ],
         };
     },
     getLocationActivityData(id: number) {

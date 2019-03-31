@@ -11,6 +11,7 @@ import {
     RouteComponentProps,
 } from 'react-router';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 interface Props extends WithTranslation, RouteComponentProps {}
 
@@ -19,6 +20,12 @@ interface State {}
 class Home extends Component<Props, State> {
     constructor(props: any) {
         super(props);
+        this.login = this.login.bind(this);
+    }
+
+    login(event: any) {
+        event.preventDefault();
+        this.props.history.push('/gincanas');
     }
 
     public render() {
@@ -28,7 +35,7 @@ class Home extends Component<Props, State> {
                 <div className="container">
                     <img src={logo} className="App-logo" alt="GinQuest" />
 
-                    <Form id="Home-Form--Login">
+                    <Form id="Home-Form--Login" onSubmit={this.login}>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Control type="email" placeholder="E-mail" />
                         </Form.Group>
@@ -48,9 +55,7 @@ class Home extends Component<Props, State> {
                     </Form>
 
                     <div className="Home-Btn--New">
-                        <a href="" className="btn btn-primary">
-                            {t('Home.NewUser')}
-                        </a>
+                        <a className="btn btn-primary">{t('Home.NewUser')}</a>
                     </div>
 
                     <div className="Home-Link--Forget">

@@ -4,7 +4,7 @@ import MapWrapper from '../../MapWrapper/MapWrapper';
 import Button from 'react-bootstrap/Button';
 import { WithTranslation, withTranslation } from 'react-i18next';
 import i18next from 'i18next';
-import apiService from '../../../services/ginQuestApi';
+import apiService from '../../../api/ginQuest';
 
 interface Props extends WithTranslation {}
 

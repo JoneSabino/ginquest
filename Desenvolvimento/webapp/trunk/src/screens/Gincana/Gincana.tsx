@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { withTranslation, WithTranslation } from 'react-i18next';
 import { RouteChildrenProps } from 'react-router';
-import apiService from '../../services/ginQuestApi';
+import apiService from '../../api/ginQuest';
 import { ListGroup } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 interface Props extends RouteChildrenProps, WithTranslation {}
 
@@ -14,7 +15,12 @@ interface State {
         idusuario: number;
         nome: string;
     };
-    tarefas: [];
+    tarefas: Array<{
+        idtarefa: number;
+        idgincana: number;
+        idtipotarefa: number;
+        nome: string;
+    }>;
 }
 
 class Gincana extends Component<Props, State> {
@@ -34,7 +40,11 @@ class Gincana extends Component<Props, State> {
             // @ts-ignore
             this.props.match!.params.id
         );
-        this.setState({ nome: gincana.nome, criador: gincana.criador });
+        this.setState({
+            nome: gincana.nome,
+            criador: gincana.criador,
+            tarefas: gincana.tarefas,
+        });
     }
 
     render() {
@@ -48,7 +58,9 @@ class Gincana extends Component<Props, State> {
                 </label>
                 <ListGroup>
                     {tarefas.map(tarefa => (
-                        <ListGroup.Item>Tarefa</ListGroup.Item>
+                        <LinkContainer to={`/activity/${tarefa.idtarefa}`}>
+                            <ListGroup.Item>{tarefa.nome}</ListGroup.Item>
+                        </LinkContainer>
                     ))}
                 </ListGroup>
             </div>

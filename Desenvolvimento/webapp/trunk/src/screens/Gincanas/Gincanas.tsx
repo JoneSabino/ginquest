@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withTranslation, WithTranslation } from 'react-i18next';
 import { RouteChildrenProps } from 'react-router';
-import apiService from '../../services/ginQuestApi';
+import apiService from '../../api/ginQuest';
 import { ListGroup } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
