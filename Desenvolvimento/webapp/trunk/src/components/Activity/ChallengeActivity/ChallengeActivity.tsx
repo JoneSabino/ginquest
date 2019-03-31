@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { withTranslation, WithTranslation } from 'react-i18next';
 import QrReader from 'react-qr-reader';
-import apiService from '../../../api/ginQuest';
 
-interface Props extends WithTranslation {}
-
-interface State {
-    result: string;
-    isCompleted: boolean;
-    tarefa?: {
+interface Props extends WithTranslation {
+    tarefa: {
         qrcode: string;
         description?: string;
         image?: any;
     };
+}
+
+interface State {
+    result: string;
+    isCompleted: boolean;
 }
 
 class Desafio extends Component<Props, State> {
@@ -28,18 +28,9 @@ class Desafio extends Component<Props, State> {
         this._isMounted = true;
     }
 
-    public async componentDidMount() {
-        const tarefa = await apiService.getTarefaQuiz(5);
-
-        this._isMounted &&
-            this.setState({
-                tarefa,
-            });
-    }
-
     public handleScan = (data: string | null) => {
         if (data) {
-            if (this.state.tarefa && data === this.state.tarefa.qrcode) {
+            if (this.props.tarefa && data === this.props.tarefa.qrcode) {
                 this._isMounted &&
                     this.setState({
                         isCompleted: true,
@@ -61,12 +52,8 @@ class Desafio extends Component<Props, State> {
         console.error(err);
     };
     public render() {
-        const {
-            isCompleted = false,
-            tarefa = { image: '', description: '' },
-            result = '',
-        } = this.state || {};
-        const { image, description } = tarefa;
+        const { isCompleted = false, result = '' } = this.state || {};
+        const { image = '', description = '' } = this.props.tarefa;
         const tela = (
             <div>
                 {image ? (

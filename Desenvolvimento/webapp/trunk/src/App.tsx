@@ -22,7 +22,7 @@ class App extends Component<Props, State> {
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <BodyContainer>
-                            <Route path="/activity" component={Activity} />
+                            <Route path="/activity/:id" component={Activity} />
                             <Route path="/gincanas" component={Gincanas} />
                             <Route path="/gincana/:id" component={Gincana} />
                         </BodyContainer>

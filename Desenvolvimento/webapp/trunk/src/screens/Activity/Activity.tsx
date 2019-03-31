@@ -11,13 +11,13 @@ import apiService from '../../api/ginQuest';
 interface Props extends RouteComponentProps {}
 
 interface State {
-    idtipotarefa?: number;
+    tarefa?: any;
 }
 
 class Activity extends Component<Props, State> {
     constructor(props: Props) {
         super(props);
-        this.state = {};
+        this.state = { tarefa: {} };
     }
 
     async componentDidMount() {
@@ -27,21 +27,20 @@ class Activity extends Component<Props, State> {
                 // @ts-ignore
                 this.props.match!.params.id
             );
-            console.log(tarefa.idtipotarefa);
-            this.setState({ idtipotarefa: tarefa.idtipotarefa });
+            this.setState({ tarefa });
         }
     }
 
     public render() {
-        const { idtipotarefa } = this.state;
+        const { idtipotarefa } = this.state.tarefa;
 
         let activity;
         if (idtipotarefa === 1) {
-            activity = <QuizActivity />;
+            activity = <DesafioActivity tarefa={this.state.tarefa} />;
         } else if (idtipotarefa === 2) {
-            activity = <LocationActivity />;
+            activity = <QuizActivity />;
         } else if (idtipotarefa === 3) {
-            activity = <DesafioActivity />;
+            activity = <LocationActivity />;
         }
 
         console.log(activity);
