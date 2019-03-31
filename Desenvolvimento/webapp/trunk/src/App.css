@@ -1,3 +1,14 @@
+body {
+  background: #564733;
+  color: #fff;
+}
+
+.Button-Center {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
 button.btn,
 a.btn {
     border-radius: 0px;
@@ -17,14 +28,18 @@ a.btn-primary {
     background: url(assets/btn-primary.svg) 100% no-repeat;
 }
 
+button:hover,
+a.btn:hover,
+.btn-secondary:hover,
+.btn:disabled{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 button.btn-secondary {
     /* background: #b5a67b; */
     background: url(assets/btn-secondary.svg) 100% no-repeat;
-}
-
-a {
-    color: white;
-    letter-spacing: 1px;
 }
 
 #root {
@@ -33,5 +48,5 @@ a {
 
 #mainContainer {
     padding: 0;
-    height: 100vh;
+    height: 95vh;
 }

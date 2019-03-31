@@ -54,6 +54,13 @@ class Desafio extends Component<Props, State> {
         const { image = '', description = '' } = this.props;
         const tela = (
             <div>
+                <div className="Activity-Title">
+                    <span className="Activity-Title--Left"></span>
+                    Desafio
+                    <span className="Activity-Title--Right"></span>
+                </div>
+
+                <div className="Activity-Image">
                 {image ? (
                     <img
                         style={{ height: '100%', width: '100%' }}
@@ -62,7 +69,8 @@ class Desafio extends Component<Props, State> {
                 ) : (
                     ''
                 )}
-                {description ? <label>{description}</label> : ''}
+                </div>
+                {description ? <div className="Activity-Description">{description}</div> : ''}
                 <QrReader
                     delay={300}
                     onError={this.handleError}

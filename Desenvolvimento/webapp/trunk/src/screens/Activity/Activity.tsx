@@ -7,6 +7,7 @@ import Image from 'react-bootstrap/Image';
 import { Col, Row, NavDropdown, ProgressBar } from 'react-bootstrap';
 import logo from '../../assets/logo.svg';
 import apiService from '../../api/ginQuest';
+import './Activity.css';
 
 interface Props extends RouteComponentProps {}
 
@@ -45,7 +46,7 @@ class Activity extends Component<Props, State> {
 
         return (
             <div>
-                <Row>
+                <Row className="Activity-HeaderBrand">
                     <Col xs={3}>
                         <Image
                             src={logo}
@@ -64,33 +65,37 @@ class Activity extends Component<Props, State> {
                     </Col>
                 </Row>
                 <NavDropdown.Divider />
-                <Row>
+                <Row className="Activity-Level">
                     <Col xs={3} className="align-self-center">
-                        <h5>Level 1</h5>
+                        Level 1
                     </Col>
                     <Col xs={9} className="align-self-center">
                         <ProgressBar variant="success" now={40} />
                     </Col>
                 </Row>
 
-                {activity ? (
-                    activity
-                ) : (
-                    <Switch>
-                        <Route
-                            path={`${this.props.match!.url}/quiz`}
-                            component={QuizActivity}
-                        />
-                        <Route
-                            path={`${this.props.match!.url}/location`}
-                            component={LocationActivity}
-                        />
-                        <Route
-                            path={`${this.props.match!.url}/desafio`}
-                            component={DesafioActivity}
-                        />
-                    </Switch>
-                )}
+                <div className="Activity-HR"></div>
+
+                <div className="Activity-BG--Sand">
+                    {activity ? (
+                        activity
+                    ) : (
+                        <Switch>
+                            <Route
+                                path={`${this.props.match!.url}/quiz`}
+                                component={QuizActivity}
+                            />
+                            <Route
+                                path={`${this.props.match!.url}/location`}
+                                component={LocationActivity}
+                            />
+                            <Route
+                                path={`${this.props.match!.url}/desafio`}
+                                component={DesafioActivity}
+                            />
+                        </Switch>
+                    )}
+                </div>
             </div>
         );
     }

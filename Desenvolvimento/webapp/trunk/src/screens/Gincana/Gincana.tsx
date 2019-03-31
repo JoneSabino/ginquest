@@ -40,7 +40,8 @@ class Gincana extends Component<Props, State> {
     }
 
     public async componentDidMount() {
-        const gincana = await apiService.getGincana(
+        const gincana = await apiService.getGincana(        
+            //  @ts-ignore
             // @ts-ignore
             this.props.match!.params.id
         );
