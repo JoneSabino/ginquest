@@ -3,7 +3,7 @@ info:
   version: "1.0.0"
   title: GinQuest API
 # during dev, should point to your local machine
-host: localhost:3000
+host: ginquest-backend-dot-ginquest-app.appspot.com
 # basePath prefixes all resource paths
 basePath: /
 #
@@ -39,7 +39,7 @@ paths:
           name: body
           required: true
           schema:
-            $ref: '#/definitions/QuizRequest'
+            $ref: "#/definitions/QuizRequest"
       responses:
         "200":
           description: Success
@@ -52,7 +52,7 @@ paths:
         "200":
           description: Success
           schema:
-            $ref: '#/definitions/Gincana'
+            $ref: "#/definitions/Gincana"
   /tarefa:
     x-swagger-router-controller: tarefa
     get:
@@ -62,7 +62,7 @@ paths:
         "200":
           description: Success
           schema:
-            $ref: '#/definitions/Tarefa'
+            $ref: "#/definitions/Tarefa"
   /version:
     x-swagger-router-controller: util
     get:
@@ -108,4 +108,3 @@ definitions:
         type: integer
       nome:
         type: string
-        

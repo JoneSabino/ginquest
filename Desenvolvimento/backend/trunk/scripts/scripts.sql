@@ -12,6 +12,7 @@ create table TipoTarefa (
 );
 insert into TipoTarefa(Nome) values ('Desafio');
 insert into TipoTarefa(Nome) values ('Quiz');
+insert into TipoTarefa(Nome) values ('Localização');
 create table Tarefa (
     IdTarefa serial primary key,
     IdGincana int references Gincana(IdGincana),
@@ -20,3 +21,4 @@ create table Tarefa (
 );
 insert into Tarefa(IdGincana, IdTipoTarefa, Nome) values (1, 1, 'Tarefa de desafio');
 insert into Tarefa(IdGincana, IdTipoTarefa, Nome) values (1, 2, 'Tarefa de quiz');
+insert into Tarefa(IdGincana, IdTipoTarefa, Nome) values (1, 3, 'Tarefa de localização');
