@@ -1,15 +1,9 @@
-import i18next from 'i18next';
 import React, { Component } from 'react';
 import logo from '../../assets/icon512.png';
-import '../../App.css';
 import './Home.css';
 import Form from 'react-bootstrap/Form';
 import { withTranslation, WithTranslation } from 'react-i18next';
-import {
-    RouteChildrenProps,
-    withRouter,
-    RouteComponentProps,
-} from 'react-router';
+import { withRouter, RouteComponentProps } from 'react-router';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -31,9 +25,9 @@ class Home extends Component<Props, State> {
     public render() {
         const { t } = this.props;
         return (
-            <div className="App App-header App-Home">
-                <div className="container">
-                    <img src={logo} className="App-logo" alt="GinQuest" />
+            <div className="Home">
+                <div className="Home-container">
+                    <img src={logo} className="Home-logo" alt="GinQuest" />
 
                     <Form id="Home-Form--Login" onSubmit={this.login}>
                         <Form.Group controlId="formBasicEmail">

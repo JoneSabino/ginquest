@@ -6,6 +6,8 @@ import BodyContainer from './components/BodyContainer/BodyContainer';
 import Activity from './screens/Activity/Activity';
 import Gincanas from './screens/Gincanas/Gincanas';
 import Gincana from './screens/Gincana/Gincana';
+import './App.css';
+import { Container } from 'react-bootstrap';
 
 interface Props {}
 
@@ -15,7 +17,7 @@ class App extends Component<Props, State> {
     public render(): JSX.Element {
         return (
             <BrowserRouter>
-                <div>
+                <Container fluid id="mainContainer">
                     <Route component={Header} />
                     <Switch>
                         <Route exact path="/" component={Home} />
@@ -26,7 +28,7 @@ class App extends Component<Props, State> {
                         </BodyContainer>
                         <Redirect from="*" to="/" />
                     </Switch>
-                </div>
+                </Container>
             </BrowserRouter>
         );
     }

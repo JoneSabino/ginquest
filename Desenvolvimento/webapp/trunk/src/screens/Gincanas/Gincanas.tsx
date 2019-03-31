@@ -23,7 +23,7 @@ class Gincanas extends Component<Props, State> {
         };
     }
 
-    async componentDidMount() {
+    public async componentDidMount() {
         const gincanas = await apiService.getGincanas();
         this.setState({ gincanas });
     }

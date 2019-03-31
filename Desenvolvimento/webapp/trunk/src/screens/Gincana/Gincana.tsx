@@ -5,7 +5,11 @@ import apiService from '../../api/ginQuest';
 import { ListGroup } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
-interface Props extends RouteChildrenProps, WithTranslation {}
+interface MatchParam {
+    id: string;
+}
+
+interface Props extends RouteChildrenProps<MatchParam>, WithTranslation {}
 
 interface State {
     idgincana: number;
@@ -35,9 +39,8 @@ class Gincana extends Component<Props, State> {
         };
     }
 
-    async componentDidMount() {
+    public async componentDidMount() {
         const gincana = await apiService.getGincana(
-            // @ts-ignore
             this.props.match!.params.id
         );
         this.setState({
@@ -47,7 +50,7 @@ class Gincana extends Component<Props, State> {
         });
     }
 
-    render() {
+    public render() {
         const { t } = this.props;
         const { nome, criador, dataCriacao, tarefas } = this.state;
         return (

@@ -1,26 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Header';
+import MobileHeader from './MobileHeader';
 import { MemoryRouter } from 'react-router';
-import InternationalizationWrapper from '../AuxiliarComponents/InternationalizationWrapper/InternationalizationWrapper';
+import InternationalizationWrapper from '../../AuxiliarComponents/InternationalizationWrapper/InternationalizationWrapper';
 
 it('renders without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(
         <MemoryRouter>
             <InternationalizationWrapper>
-                <Header />
+                <MobileHeader />
             </InternationalizationWrapper>
         </MemoryRouter>,
         div
     );
     ReactDOM.unmountComponentAtNode(div);
 });
-
-/*
-it('renders MOBILE header for MOBILE screens', () => {
-
-});
-
-it('renders DESKTOP header for DESKTOP screens', () => {});
-*/
