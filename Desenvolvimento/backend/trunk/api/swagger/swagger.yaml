@@ -3,7 +3,7 @@ info:
   version: "1.0.0"
   title: GinQuest API
 # during dev, should point to your local machine
-host: ginquest-backend-dot-ginquest-app.appspot.com
+host: localhost:3000
 # basePath prefixes all resource paths
 basePath: /
 #
@@ -43,6 +43,26 @@ paths:
       responses:
         "200":
           description: Success
+  /gincana:
+    x-swagger-router-controller: gincana
+    get:
+      description: Retorna gincanas
+      operationId: getGincanas
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: '#/definitions/Gincana'
+  /tarefa:
+    x-swagger-router-controller: tarefa
+    get:
+      description: Retorna gincanas
+      operationId: getTarefas
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: '#/definitions/Tarefa'
   /version:
     x-swagger-router-controller: util
     get:
@@ -70,4 +90,22 @@ definitions:
         type: string
       correct:
         type: integer
-    
+  Gincana:
+    properties:
+      idgincana:
+        type: integer
+      nome:
+        type: string
+      criador:
+        type: integer
+  Tarefa:
+    properties:
+      idtarefa:
+        type: integer
+      idgincana:
+        type: integer
+      idtipotarefa:
+        type: integer
+      nome:
+        type: string
+        
