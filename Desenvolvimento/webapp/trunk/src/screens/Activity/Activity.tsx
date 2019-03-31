@@ -4,7 +4,7 @@ import QuizActivity from '../../components/Activity/QuizActivity/QuizActivity';
 import LocationActivity from '../../components/Activity/LocationActivity/LocationActivity';
 import Desafio from '../../components/Activity/ChallengeActivity/ChallengeActivity';
 import Image from 'react-bootstrap/Image';
-import { Col, Row, Media, NavDropdown, ProgressBar } from 'react-bootstrap';
+import { Col, Row, NavDropdown, ProgressBar } from 'react-bootstrap';
 import logo from '../../assets/logo.svg';
 
 interface Props extends RouteComponentProps {}

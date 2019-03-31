@@ -33,7 +33,10 @@ class Home extends Component<Props, State> {
                             <Form.Control type="password" placeholder="Senha" />
                         </Form.Group>
                         <Form.Group controlId="formBasicChecbox">
-                            <Form.Check type="checkbox" label="Permanecer logado! :)" />
+                            <Form.Check
+                                type="checkbox"
+                                label="Permanecer logado! :)"
+                            />
                         </Form.Group>
                         <Button variant="secondary" type="submit">
                             Acessar
@@ -41,13 +44,14 @@ class Home extends Component<Props, State> {
                     </Form>
 
                     <div className="Home-Btn--New">
-                        <a href="" className="btn btn-primary">Sou um novo usuário</a>
-                    </div>
-                    
-                    <div className="Home-Link--Forget">
-                        <a href="">Oooops! Esqueci minha senha!</a>
+                        <a href="" className="btn btn-primary">
+                            {t('Home.NewUser')}
+                        </a>
                     </div>
 
+                    <div className="Home-Link--Forget">
+                        <a href="">{t('Home.ForgotPassword')}</a>
+                    </div>
                 </div>
             </div>
         );

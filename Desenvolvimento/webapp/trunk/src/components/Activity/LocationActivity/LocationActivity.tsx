@@ -50,7 +50,7 @@ class LocationActivity extends Component<Props, State> {
         });
     }
 
-    public async componentWillMount() {
+    public async componentDidMount() {
         const locationActivityData = await apiService.getLocationActivityData(
             5
         );
