@@ -22,6 +22,8 @@ interface State {
 }
 
 class LocationActivity extends Component<Props, State> {
+    private _isMounted: boolean = false;
+
     constructor(pros: Props, state: State) {
         super(pros, state);
         this.state = {
@@ -37,6 +39,7 @@ class LocationActivity extends Component<Props, State> {
             },
         };
         this.positionChanged = this.positionChanged.bind(this);
+        this._isMounted = true;
     }
 
     private positionChanged(
@@ -44,10 +47,15 @@ class LocationActivity extends Component<Props, State> {
         circleBounds: google.maps.LatLngBounds,
         errorMessage: string | null
     ): void {
-        this.setState({
-            insideCircle: circleBounds.contains(position),
-            errorMessage,
-        });
+        this._isMounted &&
+            this.setState({
+                insideCircle: circleBounds.contains(position),
+                errorMessage,
+            });
+    }
+
+    public componentWillUnmount() {
+        this._isMounted = false;
     }
 
     public async componentDidMount() {
@@ -55,9 +63,10 @@ class LocationActivity extends Component<Props, State> {
             5
         );
 
-        this.setState({
-            locationActivityData,
-        });
+        this._isMounted &&
+            this.setState({
+                locationActivityData,
+            });
     }
 
     public render() {

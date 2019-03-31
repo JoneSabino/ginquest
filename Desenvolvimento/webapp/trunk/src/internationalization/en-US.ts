@@ -1,4 +1,4 @@
-const en_US = {
+const EN_US = {
     translation: {
         Home: 'Home',
         'Language Select': 'Language Select',
@@ -29,4 +29,4 @@ const en_US = {
     },
 };
 
-export default en_US;
+export default EN_US;

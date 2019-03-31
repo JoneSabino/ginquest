@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Desafio from './ChallengeActivity';
+import ChallengeActivity from './ChallengeActivity';
+import InternationalizationWrapper from '../../AuxiliarComponents/InternationalizationWrapper/InternationalizationWrapper';
 
 jest.mock('react-qr-reader', () => (props: any) => {
     return <div />;
@@ -8,6 +9,11 @@ jest.mock('react-qr-reader', () => (props: any) => {
 
 it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Desafio />, div);
+    ReactDOM.render(
+        <InternationalizationWrapper>
+            <ChallengeActivity />
+        </InternationalizationWrapper>,
+        div
+    );
     ReactDOM.unmountComponentAtNode(div);
 });

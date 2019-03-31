@@ -5,10 +5,14 @@ import '../../App.css';
 import './Home.css';
 import Form from 'react-bootstrap/Form';
 import { withTranslation, WithTranslation } from 'react-i18next';
-import { RouteChildrenProps } from 'react-router';
+import {
+    RouteChildrenProps,
+    withRouter,
+    RouteComponentProps,
+} from 'react-router';
 import { Button } from 'react-bootstrap';
 
-interface Props extends RouteChildrenProps, WithTranslation {}
+interface Props extends WithTranslation, RouteComponentProps {}
 
 interface State {}
 
@@ -58,4 +62,4 @@ class Home extends Component<Props, State> {
     }
 }
 
-export default withTranslation()(Home);
+export default withRouter(withTranslation()(Home));

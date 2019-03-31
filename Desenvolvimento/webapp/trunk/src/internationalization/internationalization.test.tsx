@@ -2,13 +2,13 @@ import ptBR from './pt-BR';
 import enUS from './en-US';
 
 it('Has all the translations in both languages', () => {
-    var ptBRArray = [];
-    var enUSArray = [];
+    const ptBRArray = [];
+    const enUSArray = [];
 
-    for (var property in ptBR.translation) {
+    for (const property of Object.keys(ptBR.translation)) {
         ptBRArray.push(property);
     }
-    for (var property in enUS.translation) {
+    for (const property of Object.keys(enUS.translation)) {
         enUSArray.push(property);
     }
     ptBRArray.sort();

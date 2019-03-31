@@ -1,4 +1,4 @@
-const pt_BR = {
+const PT_BR = {
     translation: {
         Home: 'Início',
         'Language Select': 'Selecionar Idioma',
@@ -29,4 +29,4 @@ const pt_BR = {
     },
 };
 
-export default pt_BR;
+export default PT_BR;

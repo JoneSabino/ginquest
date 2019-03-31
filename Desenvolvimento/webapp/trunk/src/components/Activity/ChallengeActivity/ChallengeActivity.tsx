@@ -13,24 +13,25 @@ interface State {
         description?: string;
         image?: any;
     };
-    isMounted: boolean;
 }
 
 class Desafio extends Component<Props, State> {
+    private _isMounted: boolean = false;
+
     constructor(props: Props) {
         super(props);
         this.state = {
             result: 'No result',
             isCompleted: false,
-            isMounted: true,
         };
         this.handleScan = this.handleScan.bind(this);
+        this._isMounted = true;
     }
 
     public async componentDidMount() {
         const tarefa = await apiService.getTarefa(5);
 
-        this.state.isMounted &&
+        this._isMounted &&
             this.setState({
                 tarefa,
             });
@@ -39,12 +40,12 @@ class Desafio extends Component<Props, State> {
     public handleScan = (data: string | null) => {
         if (data) {
             if (this.state.tarefa && data === this.state.tarefa.qrcode) {
-                this.state.isMounted &&
+                this._isMounted &&
                     this.setState({
                         isCompleted: true,
                     });
             } else {
-                this.state.isMounted &&
+                this._isMounted &&
                     this.setState({
                         result: data,
                     });
@@ -53,7 +54,7 @@ class Desafio extends Component<Props, State> {
     };
 
     public componentWillUnmount() {
-        this.setState({ isMounted: false });
+        this._isMounted = false;
     }
 
     public handleError = (err: any) => {
