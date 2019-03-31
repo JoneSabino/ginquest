@@ -20,7 +20,7 @@ class Activity extends Component<Props, State> {
         this.state = { tarefa: {} };
     }
 
-    async componentDidMount() {
+    public async componentDidMount() {
         // @ts-ignore
         const id = this.props.match!.params.id;
         let isNumber = Number.isInteger(Number(id));

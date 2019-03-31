@@ -7,6 +7,18 @@ import App from './App';
 import './internationalization/i18n';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+    faIgloo,
+    faHome,
+    faMapMarkerAlt,
+    faCogs,
+} from '@fortawesome/free-solid-svg-icons';
+
+library.add(faIgloo);
+library.add(faHome);
+library.add(faMapMarkerAlt);
+library.add(faCogs);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -53,6 +53,8 @@ Typescript CheatSheet (https://www.sitepen.com/blog/typescript-cheat-sheet)
 
 React Bootstrap (https://react-bootstrap.github.io/)
 
+React FontAwesome - Icons (https://github.com/FortAwesome/react-fontawesome)
+
 ## Proxy
 
 ## Remove

@@ -5,7 +5,6 @@ import Form from 'react-bootstrap/Form';
 import { withTranslation, WithTranslation } from 'react-i18next';
 import { withRouter, RouteComponentProps } from 'react-router';
 import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 interface Props extends WithTranslation, RouteComponentProps {}
 
@@ -17,7 +16,7 @@ class Home extends Component<Props, State> {
         this.login = this.login.bind(this);
     }
 
-    login(event: any) {
+    public login(event: any) {
         event.preventDefault();
         this.props.history.push('/gincanas');
     }

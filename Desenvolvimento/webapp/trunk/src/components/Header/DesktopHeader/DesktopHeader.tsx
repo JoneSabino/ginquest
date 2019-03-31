@@ -4,6 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { WithTranslation, withTranslation } from 'react-i18next';
 import { RouteComponentProps, withRouter } from 'react-router';
 import i18next from 'i18next';
+import './DesktopHeader.css';
 
 interface Props extends WithTranslation, RouteComponentProps {}
 
@@ -13,7 +14,12 @@ class DesktopHeader extends Component<Props, State> {
     public render() {
         const { t } = this.props;
         return (
-            <Navbar bg="light" expand="sm" sticky="top">
+            <Navbar
+                bg="light"
+                expand="sm"
+                sticky="top"
+                id="DesktopHeader-Navbar"
+            >
                 <LinkContainer to="/">
                     <Navbar.Brand>GinQuest</Navbar.Brand>
                 </LinkContainer>
