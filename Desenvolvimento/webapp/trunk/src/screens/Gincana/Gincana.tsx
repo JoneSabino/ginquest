@@ -55,19 +55,25 @@ class Gincana extends Component<Props, State> {
     public render() {
         const { t } = this.props;
         const { nome, criador, dataCriacao, tarefas } = this.state;
+
         return (
-            <div>
-                <h2>{nome}</h2>
-                <label>
-                    {t('CRIADO_POR_EM', { nome: criador.nome, dataCriacao })}
-                </label>
-                <ListGroup>
-                    {tarefas.map(tarefa => (
-                        <LinkContainer to={`/activity/${tarefa.idtarefa}`}>
-                            <ListGroup.Item>{tarefa.nome}</ListGroup.Item>
-                        </LinkContainer>
-                    ))}
-                </ListGroup>
+            <div className="List">
+                <div className="container">
+                    <h1>{nome}</h1>
+                    <h2>
+                        {t('CRIADO_POR_EM', { nome: criador.nome, dataCriacao })}
+                    </h2>
+                    <div className="List-HR"></div>
+                    <div className="Activity-BG--Land">
+                    <ListGroup>
+                        {tarefas.map(tarefa => (
+                            <LinkContainer to={`/activity/${tarefa.idtarefa}`}>
+                                <ListGroup.Item>{tarefa.nome}</ListGroup.Item>
+                            </LinkContainer>
+                        ))}
+                    </ListGroup>
+                    </div>
+                </div>
             </div>
         );
     }

@@ -14,15 +14,15 @@ class MobileHeader extends Component<Props, State> {
     public render() {
         const { t } = this.props;
         return (
-            <Nav fill justify variant="tabs">
+            <Nav fill justify variant="tabs" className="fixed-bottom">
                 <Nav.Item>
                     <LinkContainer exact to="/">
                         <Nav.Link eventKey="link-0">
-                            <FontAwesomeIcon icon="home" size="lg" />
+                            <FontAwesomeIcon icon="igloo" size="lg" />
                         </Nav.Link>
                     </LinkContainer>
                 </Nav.Item>
-                <Nav.Item>
+                {/* <Nav.Item>
                     <LinkContainer to="/activity/location">
                         <Nav.Link eventKey="link-1">
                             <FontAwesomeIcon icon="map-marker-alt" size="lg" />
@@ -35,7 +35,7 @@ class MobileHeader extends Component<Props, State> {
                             <FontAwesomeIcon icon="cogs" size="lg" />
                         </Nav.Link>
                     </LinkContainer>
-                </Nav.Item>
+                </Nav.Item> */}
                 <Nav.Item>
                     <LinkContainer to="/gincanas">
                         <Nav.Link eventKey="link-3">
@@ -43,13 +43,13 @@ class MobileHeader extends Component<Props, State> {
                         </Nav.Link>
                     </LinkContainer>
                 </Nav.Item>
-                <Nav.Item>
+                {/* <Nav.Item>
                     <LinkContainer to="/activity/quiz/create">
                         <Nav.Link eventKey="link-4">
                             <FontAwesomeIcon icon="igloo" size="lg" />
                         </Nav.Link>
                     </LinkContainer>
-                </Nav.Item>
+                </Nav.Item> */}
             </Nav>
         );
     }

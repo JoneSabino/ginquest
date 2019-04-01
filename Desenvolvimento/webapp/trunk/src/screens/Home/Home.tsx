@@ -25,7 +25,7 @@ class Home extends Component<Props, State> {
         const { t } = this.props;
         return (
             <div className="Home">
-                <div className="Home-container">
+                <div className="container">
                     <img src={logo} className="Home-logo" alt="GinQuest" />
 
                     <Form id="Home-Form--Login" onSubmit={this.login}>

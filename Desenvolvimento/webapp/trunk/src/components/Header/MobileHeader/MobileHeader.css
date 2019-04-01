@@ -1,3 +1,8 @@
+.nav {
+    background: #7d6f4e;
+    padding: 10px 0;
+}
+
 .nav-link {
     color: #aaa;
 }
@@ -11,3 +16,4 @@
     width: 3em;
     height: 3em;
 }
+

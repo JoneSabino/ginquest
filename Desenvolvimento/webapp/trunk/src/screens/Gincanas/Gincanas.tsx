@@ -4,6 +4,7 @@ import { RouteChildrenProps } from 'react-router';
 import apiService from '../../api/ginQuest';
 import { ListGroup } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import './Gincanas.css';
 
 interface Props extends RouteChildrenProps, WithTranslation {}
 
@@ -31,14 +32,22 @@ class Gincanas extends Component<Props, State> {
     public render() {
         const { t } = this.props;
         return (
-            <ListGroup>
-                Gincanas
-                {this.state.gincanas.map(gincana => (
-                    <LinkContainer to={`/gincana/${gincana.idgincana}`}>
-                        <ListGroup.Item>{gincana.nome}</ListGroup.Item>
-                    </LinkContainer>
-                ))}
-            </ListGroup>
+            <div className="List">
+                <div className="container">
+                    <h1>Lista de Gincanas</h1>
+                    <div className="List-HR"></div>
+                        
+                    <div className="Activity-BG--Land">
+                        <ListGroup>
+                            {this.state.gincanas.map(gincana => (
+                                <LinkContainer to={`/gincana/${gincana.idgincana}`}>
+                                    <ListGroup.Item>{gincana.nome}</ListGroup.Item>
+                                </LinkContainer>
+                            ))}
+                        </ListGroup>
+                    </div>
+                </div>
+            </div>
         );
     }
 }
