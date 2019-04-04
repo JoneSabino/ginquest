@@ -45,7 +45,7 @@ paths:
       responses:
         "200":
           description: Success
-  /gincana/${id}:
+  /gincana/{id}:
     x-swagger-router-controller: main
     get:
       description: Retorna gincana
