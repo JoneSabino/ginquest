@@ -45,8 +45,23 @@ paths:
       responses:
         "200":
           description: Success
-  /gincana:
-    x-swagger-router-controller: gincana
+  /gincana/${id}:
+    x-swagger-router-controller: main
+    get:
+      description: Retorna gincana
+      operationId: getGincana
+      parameters:
+        - in: path
+          name: id
+          type: integer
+          required: true
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/Gincana"
+  /gincanas:
+    x-swagger-router-controller: main
     get:
       description: Retorna gincanas
       operationId: getGincanas
@@ -54,9 +69,9 @@ paths:
         "200":
           description: Success
           schema:
-            $ref: "#/definitions/Gincana"
+            $ref: "#/definitions/Gincanas"
   /tarefa/{id}:
-    x-swagger-router-controller: tarefa
+    x-swagger-router-controller: main
     get:
       description: Retorna gincanas
       operationId: getTarefas
@@ -96,6 +111,14 @@ definitions:
       resposta5:
         type: string
       correct:
+        type: integer
+  Gincanas:
+    properties:
+      idgincana:
+        type: integer
+      nome:
+        type: string
+      criador:
         type: integer
   Gincana:
     properties:
