@@ -13,40 +13,16 @@ const seila = {
         return result.data;
     },
     async getGincanas() {
-        const result = await fetch(`${ginQuestAPI}/gincana`).then(response =>
+        const result = await fetch(`${ginQuestAPI}/gincanas`).then(response =>
             response.json()
         );
         return result;
     },
     async getGincana(id: string) {
-        return {
-            idgincana: 1,
-            nome: 'Uma gincana',
-            criador: {
-                idusuario: 1,
-                nome: 'Zézinho',
-            },
-            tarefas: [
-                {
-                    idtarefa: 1,
-                    idgincana: 1,
-                    idtipotarefa: 1,
-                    nome: 'Tarefa de desafio',
-                },
-                {
-                    idtarefa: 2,
-                    idgincana: 1,
-                    idtipotarefa: 2,
-                    nome: 'Tarefa de Quiz',
-                },
-                {
-                    idtarefa: 3,
-                    idgincana: 1,
-                    idtipotarefa: 3,
-                    nome: 'Tarefa de Localização',
-                },
-            ],
-        };
+        const result = await fetch(`${ginQuestAPI}/gincana/${id}`).then(
+            response => response.json()
+        );
+        return result;
     },
     getLocationActivityData(id: number) {
         return {
