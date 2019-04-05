@@ -59,12 +59,13 @@ class LocationActivity extends Component<Props, State> {
         return (
             <div>
                 <div className="Activity-Title">
-                    <span className="Activity-Title--Left"></span>
+                    <span className="Activity-Title--Left" />
                     Localização
-                    <span className="Activity-Title--Right"></span>
+                    <span className="Activity-Title--Right" />
                 </div>
                 <div className="Activity-Description">
-                   Museu de Arte de São Paulo Assis Chateaubriand é uma das mais importantes instituições culturais brasileiras.          
+                    Museu de Arte de São Paulo Assis Chateaubriand é uma das
+                    mais importantes instituições culturais brasileiras.
                 </div>
                 <div>
                     <MapWrapper

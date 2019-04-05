@@ -55,22 +55,26 @@ class Desafio extends Component<Props, State> {
         const tela = (
             <div>
                 <div className="Activity-Title">
-                    <span className="Activity-Title--Left"></span>
+                    <span className="Activity-Title--Left" />
                     Desafio
-                    <span className="Activity-Title--Right"></span>
+                    <span className="Activity-Title--Right" />
                 </div>
 
                 <div className="Activity-Image">
-                {image ? (
-                    <img
-                        style={{ height: '100%', width: '100%' }}
-                        src={image}
-                    />
+                    {image ? (
+                        <img
+                            style={{ height: '100%', width: '100%' }}
+                            src={image}
+                        />
+                    ) : (
+                        ''
+                    )}
+                </div>
+                {description ? (
+                    <div className="Activity-Description">{description}</div>
                 ) : (
                     ''
                 )}
-                </div>
-                {description ? <div className="Activity-Description">{description}</div> : ''}
                 <QrReader
                     delay={300}
                     onError={this.handleError}

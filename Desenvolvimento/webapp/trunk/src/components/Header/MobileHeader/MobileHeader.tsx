@@ -22,7 +22,7 @@ class MobileHeader extends Component<Props, State> {
                         </Nav.Link>
                     </LinkContainer>
                 </Nav.Item>
-                {/* <Nav.Item>
+                <Nav.Item>
                     <LinkContainer to="/activity/location">
                         <Nav.Link eventKey="link-1">
                             <FontAwesomeIcon icon="map-marker-alt" size="lg" />
@@ -35,7 +35,7 @@ class MobileHeader extends Component<Props, State> {
                             <FontAwesomeIcon icon="cogs" size="lg" />
                         </Nav.Link>
                     </LinkContainer>
-                </Nav.Item> */}
+                </Nav.Item>
                 <Nav.Item>
                     <LinkContainer to="/gincanas">
                         <Nav.Link eventKey="link-3">

@@ -35,13 +35,17 @@ class Gincanas extends Component<Props, State> {
             <div className="List">
                 <div className="container">
                     <h1>Lista de Gincanas</h1>
-                    <div className="List-HR"></div>
-                        
+                    <div className="List-HR" />
+
                     <div className="Activity-BG--Land">
                         <ListGroup>
                             {this.state.gincanas.map(gincana => (
-                                <LinkContainer to={`/gincana/${gincana.idgincana}`}>
-                                    <ListGroup.Item>{gincana.nome}</ListGroup.Item>
+                                <LinkContainer
+                                    to={`/gincana/${gincana.idgincana}`}
+                                >
+                                    <ListGroup.Item>
+                                        {gincana.nome}
+                                    </ListGroup.Item>
                                 </LinkContainer>
                             ))}
                         </ListGroup>

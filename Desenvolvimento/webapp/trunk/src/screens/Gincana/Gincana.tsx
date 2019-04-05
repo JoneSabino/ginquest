@@ -40,7 +40,7 @@ class Gincana extends Component<Props, State> {
     }
 
     public async componentDidMount() {
-        const gincana = await apiService.getGincana(        
+        const gincana = await apiService.getGincana(
             //  @ts-ignore
             // @ts-ignore
             this.props.match!.params.id
@@ -61,17 +61,24 @@ class Gincana extends Component<Props, State> {
                 <div className="container">
                     <h1>{nome}</h1>
                     <h2>
-                        {t('CRIADO_POR_EM', { nome: criador.nome, dataCriacao })}
+                        {t('CRIADO_POR_EM', {
+                            nome: criador.nome,
+                            dataCriacao,
+                        })}
                     </h2>
-                    <div className="List-HR"></div>
+                    <div className="List-HR" />
                     <div className="Activity-BG--Land">
-                    <ListGroup>
-                        {tarefas.map(tarefa => (
-                            <LinkContainer to={`/activity/${tarefa.idtarefa}`}>
-                                <ListGroup.Item>{tarefa.nome}</ListGroup.Item>
-                            </LinkContainer>
-                        ))}
-                    </ListGroup>
+                        <ListGroup>
+                            {tarefas.map(tarefa => (
+                                <LinkContainer
+                                    to={`/activity/${tarefa.idtarefa}`}
+                                >
+                                    <ListGroup.Item>
+                                        {tarefa.nome}
+                                    </ListGroup.Item>
+                                </LinkContainer>
+                            ))}
+                        </ListGroup>
                     </div>
                 </div>
             </div>

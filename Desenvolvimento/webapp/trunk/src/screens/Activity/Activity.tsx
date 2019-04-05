@@ -24,7 +24,7 @@ class Activity extends Component<Props, State> {
     public async componentDidMount() {
         // @ts-ignore
         const id = this.props.match!.params.id;
-        let isNumber = Number.isInteger(Number(id));
+        const isNumber = Number.isInteger(Number(id));
 
         if (id && isNumber) {
             const tarefa = await apiService.getTarefa(id);
@@ -47,7 +47,7 @@ class Activity extends Component<Props, State> {
         return (
             <div>
                 <Row className="Activity-HeaderBrand">
-                    <Col xs={3}>
+                    <Col xs={'auto'}>
                         <Image
                             src={logo}
                             width="80"
@@ -55,7 +55,7 @@ class Activity extends Component<Props, State> {
                             roundedCircle
                         />
                     </Col>
-                    <Col xs={9}>
+                    <Col xs={'auto'}>
                         <Row>
                             <h5>Coca Cola - Caça ao Tesouro</h5>
                         </Row>
@@ -74,7 +74,7 @@ class Activity extends Component<Props, State> {
                     </Col>
                 </Row>
 
-                <div className="Activity-HR"></div>
+                <div className="Activity-HR" />
 
                 <div className="Activity-BG--Sand">
                     {activity ? (
