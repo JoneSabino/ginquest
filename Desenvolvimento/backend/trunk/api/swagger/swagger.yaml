@@ -70,6 +70,23 @@ paths:
           description: Success
           schema:
             $ref: "#/definitions/Gincanas"
+  /tarefa:
+    x-swagger-router-controller: main
+    post:
+      description: Retorna quiz
+      operationId: criaTarefa
+      parameters:
+        - in: body
+          name: body
+          schema:
+            $ref: "#/definitions/TarefaBody"
+      responses:
+        "200":
+          description: Success
+          schema:
+            properties:
+              idtarefa:
+                type: integer
   /tarefa/{id}:
     x-swagger-router-controller: main
     get:
@@ -149,3 +166,17 @@ definitions:
         type: integer
       nome:
         type: string
+  TarefaBody:
+    properties:
+      idgincana:
+        type: integer
+      idtipotarefa:
+        type: integer
+      nome:
+        type: string
+    required:
+      - idgincana
+      - idtipotarefa
+      - nome
+    additionalProperties:
+      type: string

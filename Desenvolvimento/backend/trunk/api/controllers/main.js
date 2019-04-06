@@ -5,7 +5,8 @@ const pgPool = require("../helpers/pgPool");
 module.exports = {
   getGincana,
   getGincanas,
-  getTarefa
+  getTarefa,
+  criaTarefa
 };
 
 function getGincana(req, res) {
@@ -19,7 +20,6 @@ function getGincana(req, res) {
      where idgincana = $1`,
     [req.swagger.params.id.value],
     (err, results) => {
-      console.log("Result!!!");
       if (err) {
         res.status(500).send(err);
       } else {
@@ -94,4 +94,44 @@ function getTarefa(req, res) {
       }
     }
   );
+}
+
+function criaTarefa(req, res) {
+  criaTarefaAsync(req, res).then();
+}
+
+async function criaTarefaAsync(req, res) {
+  try {
+    let body = req.swagger.params.body.value;
+    const { idgincana, idtipotarefa, nome } = body;
+    const insertTarefa = {
+      name: "insereTarefa",
+      text:
+        "insert into Tarefa(IdGincana, IdTipoTarefa, Nome) values ($1, $2, $3) returning idtarefa",
+      values: [idgincana, idtipotarefa, nome]
+    };
+    let result = await pgPool.query(insertTarefa);
+    const { idtarefa } = result.rows[0];
+    for (let param in body) {
+      if (!["idgincana", "idtipotarefa", "nome"].includes(param)) {
+        const getTipoAtributo = {
+          name: "getTipoAtributo",
+          text: "select idtipoatributo from tipoatributo where nome = $1",
+          values: [param]
+        };
+        result = await pgPool.query(getTipoAtributo);
+        const { idtipoatributo } = result.rows[0];
+        const insereTipoAtributoValor = {
+          name: "insereTipoAtributoValor",
+          text: "insert into TarefaAtributoValor values($1, $2, $3, $4)",
+          values: [idtarefa, idtipotarefa, idtipoatributo, body[param]]
+        };
+        result = await pgPool.query(insereTipoAtributoValor);
+      }
+    }
+    res.json({ idtarefa });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json(e);
+  }
 }
