@@ -1,0 +1,60 @@
+.List {
+    background: #4ca8a5; /* Old browsers */
+    background-image: linear-gradient(to bottom, #4ca8a5 0%, #7ec5b7 100%);
+   
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.List .container {
+    padding: 20px 0px 0px 0px;
+}
+
+.List-HR {
+    background-image: url(../../assets/bg-landscape-land.svg);
+    background-repeat: repeat-x;
+    height: 20px;
+    box-sizing: border-box;
+    margin: 10px 0 -2px 0;
+}
+
+.Activity-BG--Land {
+    background: #564733;
+    padding: 0 10px;
+    margin-bottom: -2px;
+}
+
+.List .list-group {
+    padding: 10px 0;
+}
+
+.List .list-group-item {
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid #766b5d;
+    text-align: left;
+    padding: 15px 20px;
+}
+
+#Home-Form--Login {
+    margin-bottom: 20px;
+}
+
+.Home-Btn--New {
+    margin-bottom: 30px;
+}
+
+.Home-Link--Forget a {
+    text-decoration: underline;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px #999;
+    
+}

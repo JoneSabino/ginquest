@@ -1,0 +1,86 @@
+.Activity-HR {
+    background-image: url(../../assets/bg-landscape-sand.svg);
+    background-repeat: repeat-x;
+    height: 36px;
+    /* border-bottom: 10px solid #d5c98a; */
+    box-sizing: border-box;
+    margin: 10px 0 -2px 0;
+}
+.container-fluid {
+    padding: 0px;
+}
+
+.Activity-HeaderBrand {
+    margin-top: 20px;
+}
+
+.dropdown-divider {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    border-top: 1px solid #766b5d;
+}
+
+.Activity-Level {
+    padding: 0 15px;
+    color: #937858;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    background: #654f37;
+}
+
+.bg-success {
+    background-color: #B8D233 !important;
+}
+
+.Activity-BG--Sand {
+    background: #d5c98a;
+    padding: 0 10px;
+    color: #554633;
+}
+
+.Activity-Title {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.Activity-Title--Left {
+    display: inline-block;
+    background-image: url(../../assets/title-flag-left.svg);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+.Activity-Title--Right {
+    display: inline-block;
+    background-image: url(../../assets/title-flag-right.svg);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+.Activity-Image {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Activity-Description {
+    padding: 0 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 22px;
+}

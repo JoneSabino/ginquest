@@ -1,0 +1,44 @@
+.Home {
+    background: #4ca8a5; /* Old browsers */
+    background-image: url(../../assets/bg-treasurex.svg),
+        url(../../assets/bg-landscape.svg),
+        linear-gradient(to bottom, #4ca8a5 0%, #7ec5b7 100%);
+    background-repeat: no-repeat, repeat-x, no-repeat;
+    background-position: bottom, bottom, center;
+    background-size: 300px, auto 170px, cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    
+    /* justify-content: center; */
+    height: 100%;
+}
+
+.Home .container {
+    max-width: 400px;
+}
+
+.Home-logo {
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+#Home-Form--Login {
+    margin-bottom: 20px;
+}
+
+.Home-Btn--New {
+    margin-bottom: 30px;
+}
+
+.Home-Link--Forget a {
+    text-decoration: underline;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px #999;
+    
+}
