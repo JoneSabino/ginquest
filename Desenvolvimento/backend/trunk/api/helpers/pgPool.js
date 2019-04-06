@@ -15,12 +15,22 @@ if (process.env.NODE_ENV === "production") {
 
 console.log(host);
 
+var socks = require("socks5-client");
+
+var proxy_options = {
+  host: "sp1674706:12dfe448@10.102.2.253",
+  port: "3128"
+};
+
+var socksConn = socks.createConnection(proxy_options);
+
 const pgConfig = {
   max: 1,
   host,
   user: dbUser,
   password: dbPassword,
-  database: dbName
+  database: dbName //,
+  //stream: socksConn
 };
 
 let pgPool;

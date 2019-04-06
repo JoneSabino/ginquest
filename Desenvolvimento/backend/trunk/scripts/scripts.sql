@@ -1,9 +1,20 @@
+drop table Usuario;
+drop table Gincana;
+drop table TipoTarefa;
+drop table Tarefa;
+drop table TarefaAtributoValor;
+drop table TipoAtributo;
+create table Usuario (
+    IdUsuario serial primary key,
+    Nome text not null
+);
+insert into usuario(nome) values ('Zézinho');
 create table Gincana (
     IdGincana serial primary key,
     Nome text not null,
-    Criador int
+    DataCriacao date not null default now(),
+    Criador int references Usuario(IdUsuario)
 );
-/
 insert into gincana(nome, criador) values ('Uma gincana', 1);
 insert into gincana(nome, criador) values ('Outra gincana', 1);
 create table TipoTarefa (

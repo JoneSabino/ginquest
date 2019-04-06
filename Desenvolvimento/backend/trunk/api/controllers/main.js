@@ -9,17 +9,41 @@ module.exports = {
 };
 
 function getGincana(req, res) {
+  console.log("Teste");
   pgPool.query(
-    `select idgincana, nome, criador
+    `select idgincana, g.nome, criador, datacriacao, idtarefa, idtipotarefa, 
+            t.nome nometarefa, idusuario, u.nome nomeusuario
      from gincana g
-      inner join tarefa t on (t.idgincana = g.idgincana)
+      inner join tarefa t using (idgincana)
+      inner join usuario u on (g.criador = u.idusuario)
      where idgincana = $1`,
     [req.swagger.params.id.value],
     (err, results) => {
+      console.log("Result!!!");
       if (err) {
         res.status(500).send(err);
       } else {
-        res.json(results.rows);
+        if (result.rows.length) {
+          let gincana = {
+            idgincana: result.rows[0].idgincana,
+            nome: result.rows[0].nome,
+            datacriacao: result.rows[0].datacriacao,
+            criador: {
+              idusuario: result.rows[0].idusuario,
+              nome: result.rows[0].nomeusuario
+            },
+            tarefas: []
+          };
+          for (let tarefas of results.rows) {
+            tarefa.push({
+              idtarefa: tarefas.idtarefa,
+              nome: tarefas.nometarefa
+            });
+          }
+          res.json(gincana);
+        } else {
+          res.status(500).send("Nenhuma gincana encontrada!!!");
+        }
       }
     }
   );

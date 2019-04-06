@@ -11,6 +11,7 @@
     "cors": "^2.8.5",
     "express": "^4.12.3",
     "pg": "^7.9.0",
+    "socks5-client": "^1.2.6",
     "swagger-express-mw": "^0.1.0"
   },
   "devDependencies": {
