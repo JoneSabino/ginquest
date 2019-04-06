@@ -101,7 +101,7 @@ paths:
         "200":
           description: Success
           schema:
-            $ref: "#/definitions/Tarefa"
+            $ref: "#/definitions/TarefaT"
   /version:
     x-swagger-router-controller: util
     get:
@@ -155,7 +155,13 @@ definitions:
       tarefas:
         type: array
         items:
-          $ref: "#/definitions/Tarefa"
+          $ref: "#/definitions/TarefaS"
+  TarefaS:
+    properties:
+      idtarefa:
+        type: integer
+      nome:
+        type: string
   Tarefa:
     properties:
       idtarefa:
@@ -166,6 +172,14 @@ definitions:
         type: integer
       nome:
         type: string
+  TarefaT:
+    properties:
+      idtarefa:
+        type: integer
+      idtitpotarefa:
+        type: integer
+    additionalProperties:
+      type: string
   TarefaBody:
     properties:
       idgincana:

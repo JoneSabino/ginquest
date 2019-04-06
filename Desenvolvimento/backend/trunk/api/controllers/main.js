@@ -10,9 +10,8 @@ module.exports = {
 };
 
 function getGincana(req, res) {
-  console.log("Teste");
   pgPool.query(
-    `select idgincana, g.nome, criador, datacriacao, idtarefa, idtipotarefa, 
+    `select idgincana, g.nome, criador, data_criacao, idtarefa, idtipotarefa, 
             t.nome nometarefa, idusuario, u.nome nomeusuario
      from gincana g
       inner join tarefa t using (idgincana)
@@ -25,9 +24,9 @@ function getGincana(req, res) {
       } else {
         if (results.rows.length) {
           let gincana = {
-            idgincana: results.rows[0].idgincana,
+            idgincana: Number(results.rows[0].idgincana),
             nome: results.rows[0].nome,
-            datacriacao: results.rows[0].datacriacao,
+            datacriacao: results.rows[0].data_criacao,
             criador: {
               idusuario: results.rows[0].idusuario,
               nome: results.rows[0].nomeusuario
@@ -87,6 +86,7 @@ function getTarefa(req, res) {
             console.log(atributoValor);
             tarefa[atributoValor.nomeatributo] = atributoValor.valor;
           }
+          console.log(tarefa);
           res.json(tarefa);
         } else {
           res.json({});
