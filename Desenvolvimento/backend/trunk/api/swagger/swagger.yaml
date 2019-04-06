@@ -126,8 +126,19 @@ definitions:
         type: integer
       nome:
         type: string
+      datacriacao:
+        type: string
       criador:
-        type: integer
+        type: object
+        properties:
+          idusuario:
+            type: integer
+          nome:
+            type: string
+      tarefas:
+        type: array
+        items:
+          $ref: "#/definitions/Tarefa"
   Tarefa:
     properties:
       idtarefa:

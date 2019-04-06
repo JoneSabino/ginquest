@@ -23,23 +23,24 @@ function getGincana(req, res) {
       if (err) {
         res.status(500).send(err);
       } else {
-        if (result.rows.length) {
+        if (results.rows.length) {
           let gincana = {
-            idgincana: result.rows[0].idgincana,
-            nome: result.rows[0].nome,
-            datacriacao: result.rows[0].datacriacao,
+            idgincana: results.rows[0].idgincana,
+            nome: results.rows[0].nome,
+            datacriacao: results.rows[0].datacriacao,
             criador: {
-              idusuario: result.rows[0].idusuario,
-              nome: result.rows[0].nomeusuario
+              idusuario: results.rows[0].idusuario,
+              nome: results.rows[0].nomeusuario
             },
             tarefas: []
           };
           for (let tarefas of results.rows) {
-            tarefa.push({
+            gincana.tarefas.push({
               idtarefa: tarefas.idtarefa,
               nome: tarefas.nometarefa
             });
           }
+          console.log(gincana);
           res.json(gincana);
         } else {
           res.status(500).send("Nenhuma gincana encontrada!!!");
