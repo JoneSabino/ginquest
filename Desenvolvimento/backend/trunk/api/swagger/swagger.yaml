@@ -74,7 +74,7 @@ paths:
     x-swagger-router-controller: main
     get:
       description: Retorna gincanas
-      operationId: getTarefas
+      operationId: getTarefa
       parameters:
         - in: path
           name: id
