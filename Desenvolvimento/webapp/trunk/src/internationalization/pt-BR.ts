@@ -25,7 +25,7 @@ const PT_BR = {
         'Home.NewUser': 'Sou um novo usuário',
         'Home.ForgotPassword': 'Oooops! Esqueci minha senha!',
         CRIADO_POR_EM:
-            'Criado por: {{ nome }} em {{ dataCriacao, DD/MM/YYYY }}',
+            'Criado por: {{ nome }} em {{ datacriacao, DD/MM/YYYY }}',
     },
 };
 

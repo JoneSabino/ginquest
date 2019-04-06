@@ -14,7 +14,7 @@ interface Props extends RouteChildrenProps<MatchParam>, WithTranslation {}
 interface State {
     idgincana: number;
     nome: string;
-    dataCriacao: Date;
+    datacriacao: Date;
     criador: {
         idusuario: number;
         nome: string;
@@ -32,7 +32,7 @@ class Gincana extends Component<Props, State> {
         super(props);
         this.state = {
             nome: '',
-            dataCriacao: new Date(),
+            datacriacao: new Date(),
             tarefas: [],
             idgincana: 0,
             criador: { idusuario: 0, nome: '' },
@@ -54,7 +54,7 @@ class Gincana extends Component<Props, State> {
 
     public render() {
         const { t } = this.props;
-        const { nome, criador, dataCriacao, tarefas } = this.state;
+        const { nome, criador, datacriacao, tarefas } = this.state;
 
         return (
             <div className="List">
@@ -63,7 +63,7 @@ class Gincana extends Component<Props, State> {
                     <h2>
                         {t('CRIADO_POR_EM', {
                             nome: criador.nome,
-                            dataCriacao,
+                            datacriacao,
                         })}
                     </h2>
                     <div className="List-HR" />

@@ -36,10 +36,11 @@ class Activity extends Component<Props, State> {
         const { idtipotarefa } = this.state.tarefa;
 
         let activity;
+        console.log(idtipotarefa);
         if (idtipotarefa === 1) {
             activity = <DesafioActivity {...this.state.tarefa} />;
         } else if (idtipotarefa === 2) {
-            activity = <QuizActivity />;
+            activity = <QuizActivity {...this.state.tarefa} />;
         } else if (idtipotarefa === 3) {
             activity = <LocationActivity tarefa={this.state.tarefa} />;
         }
@@ -76,26 +77,7 @@ class Activity extends Component<Props, State> {
 
                 <div className="Activity-HR" />
 
-                <div className="Activity-BG--Sand">
-                    {activity ? (
-                        activity
-                    ) : (
-                        <Switch>
-                            <Route
-                                path={`${this.props.match!.url}/quiz`}
-                                component={QuizActivity}
-                            />
-                            <Route
-                                path={`${this.props.match!.url}/location`}
-                                component={LocationActivity}
-                            />
-                            <Route
-                                path={`${this.props.match!.url}/desafio`}
-                                component={DesafioActivity}
-                            />
-                        </Switch>
-                    )}
-                </div>
+                <div className="Activity-BG--Sand">{activity}</div>
             </div>
         );
     }

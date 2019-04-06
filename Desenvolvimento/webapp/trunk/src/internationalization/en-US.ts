@@ -25,7 +25,7 @@ const EN_US = {
         'Home.NewUser': "I'm a new user",
         'Home.ForgotPassword': 'Oooops! I forgot my password!',
         CRIADO_POR_EM:
-            'Criado por: {{ nome }} em {{ dataCriacao, MM/DD/YYYY }}',
+            'Criado por: {{ nome }} em {{ datacriacao, MM/DD/YYYY }}',
     },
 };
 
